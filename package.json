@@ -1,0 +1,38 @@
+{
+  "name": "react-native-typography",
+  "version": "1.0.1",
+  "description":
+    "Pixel–perfect, native–looking typographic styles for React Native",
+  "main": "src/index.js",
+  "files": ["src/"],
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hectahertz/react-native-typography.git"
+  },
+  "keywords": [
+    "react-native",
+    "react",
+    "typography",
+    "style",
+    "styles",
+    "typeface",
+    "font"
+  ],
+  "author": "hectahertz <hectahertz@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hectahertz/react-native-typography/issues"
+  },
+  "homepage": "https://github.com/hectahertz/react-native-typography#readme",
+  "dependencies": {},
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  }
+}
