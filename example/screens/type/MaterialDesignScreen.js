@@ -1,7 +1,7 @@
-import React from 'react';
-import { View, Text } from 'react-native';
-import { material } from 'react-native-typography';
-import TypeDemoScreen from './TypeDemoScreen';
+import React from "react";
+import { View, Text } from "react-native";
+import { material } from "react-native-typography";
+import TypeDemoScreen from "./TypeDemoScreen";
 
 const MaterialDesignScreen = ({ navigation }) => {
   return (

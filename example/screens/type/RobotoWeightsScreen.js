@@ -1,7 +1,7 @@
-import React from 'react';
-import { View, StyleSheet, Text } from 'react-native';
-import { material, robotoWeights } from 'react-native-typography';
-import TypeDemoScreen from './TypeDemoScreen';
+import React from "react";
+import { View, StyleSheet, Text } from "react-native";
+import { material, robotoWeights } from "react-native-typography";
+import TypeDemoScreen from "./TypeDemoScreen";
 
 const RobotoWeightsScreen = ({ navigation }) => {
   return (
@@ -15,7 +15,9 @@ const RobotoWeightsScreen = ({ navigation }) => {
           <Text style={[styles.medium, guides]}>Roboto Medium</Text>
           <Text style={[styles.bold, guides]}>Roboto Bold</Text>
           <Text style={[styles.condensed, guides]}>Roboto Condensed</Text>
-          <Text style={[styles.condensedBold, guides]}>Roboto Condensed Bold</Text>
+          <Text style={[styles.condensedBold, guides]}>
+            Roboto Condensed Bold
+          </Text>
         </View>
       )}
       renderDarkSection={guides => (
@@ -26,7 +28,9 @@ const RobotoWeightsScreen = ({ navigation }) => {
           <Text style={[styles.mediumWhite, guides]}>Roboto Medium</Text>
           <Text style={[styles.boldWhite, guides]}>Roboto Bold</Text>
           <Text style={[styles.condensedWhite, guides]}>Roboto Condensed</Text>
-          <Text style={[styles.condensedBoldWhite, guides]}>Roboto Condensed Bold</Text>
+          <Text style={[styles.condensedBoldWhite, guides]}>
+            Roboto Condensed Bold
+          </Text>
         </View>
       )}
     />
@@ -36,60 +40,60 @@ const RobotoWeightsScreen = ({ navigation }) => {
 const styles = StyleSheet.create({
   thin: {
     ...material.headlineObject,
-    ...robotoWeights.thin,
+    ...robotoWeights.thin
   },
   light: {
     ...material.headlineObject,
-    ...robotoWeights.light,
+    ...robotoWeights.light
   },
   regular: {
     ...material.headlineObject,
-    ...robotoWeights.regular,
+    ...robotoWeights.regular
   },
   medium: {
     ...material.headlineObject,
-    ...robotoWeights.medium,
+    ...robotoWeights.medium
   },
   bold: {
     ...material.headlineObject,
-    ...robotoWeights.bold,
+    ...robotoWeights.bold
   },
   condensed: {
     ...material.headlineObject,
-    ...robotoWeights.condensed,
+    ...robotoWeights.condensed
   },
   condensedBold: {
     ...material.headlineObject,
-    ...robotoWeights.condensedBold,
+    ...robotoWeights.condensedBold
   },
   thinWhite: {
     ...material.headlineWhiteObject,
-    ...robotoWeights.thin,
+    ...robotoWeights.thin
   },
   lightWhite: {
     ...material.headlineWhiteObject,
-    ...robotoWeights.light,
+    ...robotoWeights.light
   },
   regularWhite: {
     ...material.headlineWhiteObject,
-    ...robotoWeights.regular,
+    ...robotoWeights.regular
   },
   mediumWhite: {
     ...material.headlineWhiteObject,
-    ...robotoWeights.medium,
+    ...robotoWeights.medium
   },
   boldWhite: {
     ...material.headlineWhiteObject,
-    ...robotoWeights.bold,
+    ...robotoWeights.bold
   },
   condensedWhite: {
     ...material.headlineWhiteObject,
-    ...robotoWeights.condensed,
+    ...robotoWeights.condensed
   },
   condensedBoldWhite: {
     ...material.headlineWhiteObject,
-    ...robotoWeights.condensedBold,
-  },
+    ...robotoWeights.condensedBold
+  }
 });
 
 export default RobotoWeightsScreen;

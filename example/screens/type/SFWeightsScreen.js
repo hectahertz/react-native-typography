@@ -1,7 +1,7 @@
-import React from 'react';
-import { View, StyleSheet, Text } from 'react-native';
-import { human, sanFranciscoWeights } from 'react-native-typography';
-import TypeDemoScreen from './TypeDemoScreen';
+import React from "react";
+import { View, StyleSheet, Text } from "react-native";
+import { human, sanFranciscoWeights } from "react-native-typography";
+import TypeDemoScreen from "./TypeDemoScreen";
 
 const sanFranciscoWeightsScreen = ({ navigation }) => {
   return (
@@ -10,7 +10,9 @@ const sanFranciscoWeightsScreen = ({ navigation }) => {
       renderLightSection={guides => (
         <View>
           <Text style={[styles.thin, guides]}>San Francisco Thin</Text>
-          <Text style={[styles.ultraLight, guides]}>San Francisco Ultralight</Text>
+          <Text style={[styles.ultraLight, guides]}>
+            San Francisco Ultralight
+          </Text>
           <Text style={[styles.light, guides]}>San Francisco Light</Text>
           <Text style={[styles.regular, guides]}>San Francisco Regular</Text>
           <Text style={[styles.medium, guides]}>San Francisco Medium</Text>
@@ -23,11 +25,17 @@ const sanFranciscoWeightsScreen = ({ navigation }) => {
       renderDarkSection={guides => (
         <View>
           <Text style={[styles.thinWhite, guides]}>San Francisco Thin</Text>
-          <Text style={[styles.ultraLightWhite, guides]}>San Francisco Ultralight</Text>
+          <Text style={[styles.ultraLightWhite, guides]}>
+            San Francisco Ultralight
+          </Text>
           <Text style={[styles.lightWhite, guides]}>San Francisco Light</Text>
-          <Text style={[styles.regularWhite, guides]}>San Francisco Regular</Text>
+          <Text style={[styles.regularWhite, guides]}>
+            San Francisco Regular
+          </Text>
           <Text style={[styles.mediumWhite, guides]}>San Francisco Medium</Text>
-          <Text style={[styles.semiboldWhite, guides]}>San Francisco Semi-Bold</Text>
+          <Text style={[styles.semiboldWhite, guides]}>
+            San Francisco Semi-Bold
+          </Text>
           <Text style={[styles.boldWhite, guides]}>San Francisco Bold</Text>
           <Text style={[styles.heavyWhite, guides]}>San Francisco Heavy</Text>
           <Text style={[styles.blackWhite, guides]}>San Francisco Black</Text>
@@ -40,76 +48,76 @@ const sanFranciscoWeightsScreen = ({ navigation }) => {
 const styles = StyleSheet.create({
   thin: {
     ...human.title1Object,
-    ...sanFranciscoWeights.thin,
+    ...sanFranciscoWeights.thin
   },
   ultraLight: {
     ...human.title1Object,
-    ...sanFranciscoWeights.ultraLight,
+    ...sanFranciscoWeights.ultraLight
   },
   light: {
     ...human.title1Object,
-    ...sanFranciscoWeights.light,
+    ...sanFranciscoWeights.light
   },
   regular: {
     ...human.title1Object,
-    ...sanFranciscoWeights.regular,
+    ...sanFranciscoWeights.regular
   },
   medium: {
     ...human.title1Object,
-    ...sanFranciscoWeights.medium,
+    ...sanFranciscoWeights.medium
   },
   semibold: {
     ...human.title1Object,
-    ...sanFranciscoWeights.semibold,
+    ...sanFranciscoWeights.semibold
   },
   bold: {
     ...human.title1Object,
-    ...sanFranciscoWeights.bold,
+    ...sanFranciscoWeights.bold
   },
   heavy: {
     ...human.title1Object,
-    ...sanFranciscoWeights.heavy,
+    ...sanFranciscoWeights.heavy
   },
   black: {
     ...human.title1Object,
-    ...sanFranciscoWeights.black,
+    ...sanFranciscoWeights.black
   },
   thinWhite: {
     ...human.title1WhiteObject,
-    ...sanFranciscoWeights.thin,
+    ...sanFranciscoWeights.thin
   },
   ultraLightWhite: {
     ...human.title1WhiteObject,
-    ...sanFranciscoWeights.ultraLight,
+    ...sanFranciscoWeights.ultraLight
   },
   lightWhite: {
     ...human.title1WhiteObject,
-    ...sanFranciscoWeights.light,
+    ...sanFranciscoWeights.light
   },
   regularWhite: {
     ...human.title1WhiteObject,
-    ...sanFranciscoWeights.regular,
+    ...sanFranciscoWeights.regular
   },
   mediumWhite: {
     ...human.title1WhiteObject,
-    ...sanFranciscoWeights.medium,
+    ...sanFranciscoWeights.medium
   },
   semiboldWhite: {
     ...human.title1WhiteObject,
-    ...sanFranciscoWeights.semibold,
+    ...sanFranciscoWeights.semibold
   },
   boldWhite: {
     ...human.title1WhiteObject,
-    ...sanFranciscoWeights.bold,
+    ...sanFranciscoWeights.bold
   },
   heavyWhite: {
     ...human.title1WhiteObject,
-    ...sanFranciscoWeights.heavy,
+    ...sanFranciscoWeights.heavy
   },
   blackWhite: {
     ...human.title1WhiteObject,
-    ...sanFranciscoWeights.black,
-  },
+    ...sanFranciscoWeights.black
+  }
 });
 
 export default sanFranciscoWeightsScreen;
