@@ -14,19 +14,19 @@ const getStylesForColor = color => {
     largeTitleEmphasized: {
       ...human[`largeTitle${colorSuffix}Object`],
       ...systemWeights.bold,
-      letterSpacing: Platform.OS === 'ios' && 0.41,
+      letterSpacing: Platform.OS === 'ios' ? 0.41 : undefined,
     },
     title3: human[`title3${colorSuffix}Object`],
     title3Emphasized: {
       ...human[`title3${colorSuffix}Object`],
       ...systemWeights.semibold,
-      letterSpacing: Platform.OS === 'ios' && 0.75,
+      letterSpacing: Platform.OS === 'ios' ? 0.75 : undefined,
     },
     body: human[`body${colorSuffix}Object`],
     bodyEmphasized: {
       ...human[`body${colorSuffix}Object`],
       ...systemWeights.semibold,
-      letterSpacing: Platform.OS === 'ios' && -0.41,
+      letterSpacing: Platform.OS === 'ios' ? -0.41 : undefined,
     },
     subhead: human[`subhead${colorSuffix}Object`],
     subheadShort: {
@@ -36,20 +36,20 @@ const getStylesForColor = color => {
     subheadEmphasized: {
       ...human[`subhead${colorSuffix}Object`],
       ...systemWeights.semibold,
-      letterSpacing: Platform.OS === 'ios' && -0.24,
+      letterSpacing: Platform.OS === 'ios' ? -0.24 : undefined,
     },
     callout: human[`callout${colorSuffix}Object`],
     footnote: human[`footnote${colorSuffix}Object`],
     footnoteEmphasized: {
       ...human[`footnote${colorSuffix}Object`],
       ...systemWeights.semibold,
-      letterSpacing: Platform.OS === 'ios' && -0.08,
+      letterSpacing: Platform.OS === 'ios' ? -0.08 : undefined,
     },
     caption2: human[`caption2${colorSuffix}Object`],
     caption2Emphasized: {
       ...human[`caption2${colorSuffix}Object`],
       ...systemWeights.semibold,
-      letterSpacing: Platform.OS === 'ios' && 0.06,
+      letterSpacing: Platform.OS === 'ios' ? 0.06 : undefined,
     },
   };
 };
