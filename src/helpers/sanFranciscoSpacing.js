@@ -79,9 +79,10 @@ const spacingBySize = {
   78: 0.0,
   79: 0.0,
   80: 0.0,
-  81: 0.0,
+  81: 0.0
 };
 
-const sanFranciscoSpacing = size => spacingBySize[Math.min(Math.max(size, 6), 81)];
+const sanFranciscoSpacing = size =>
+  spacingBySize[Math.min(Math.max(size, 6), 81)];
 
 export default sanFranciscoSpacing;

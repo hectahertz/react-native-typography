@@ -1,5 +1,5 @@
-import { StyleSheet } from 'react-native';
-import suffixProperties from './suffixProperties';
+import { StyleSheet } from "react-native";
+import suffixProperties from "./suffixProperties";
 
 /**
  * Very frequently you may want `absoluteFill` but with a couple tweaks - the properties with the Object suffix can be
@@ -15,8 +15,8 @@ import suffixProperties from './suffixProperties';
  * @see https://github.com/facebook/react-native/blob/master/Libraries/StyleSheet/StyleSheet.js
  */
 const create = object => ({
-  ...suffixProperties(object, 'Object'),
-  ...StyleSheet.create(object),
+  ...suffixProperties(object, "Object"),
+  ...StyleSheet.create(object)
 });
 
 export default { create };

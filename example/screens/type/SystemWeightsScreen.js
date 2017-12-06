@@ -1,7 +1,7 @@
-import React from 'react';
-import { View, StyleSheet, Text } from 'react-native';
-import { human, systemWeights } from 'react-native-typography';
-import TypeDemoScreen from './TypeDemoScreen';
+import React from "react";
+import { View, StyleSheet, Text } from "react-native";
+import { human, systemWeights } from "react-native-typography";
+import TypeDemoScreen from "./TypeDemoScreen";
 
 const systemWeightsScreen = ({ navigation }) => {
   return (
@@ -32,44 +32,44 @@ const systemWeightsScreen = ({ navigation }) => {
 const styles = StyleSheet.create({
   thin: {
     ...human.title1Object,
-    ...systemWeights.thin,
+    ...systemWeights.thin
   },
   light: {
     ...human.title1Object,
-    ...systemWeights.light,
+    ...systemWeights.light
   },
   regular: {
     ...human.title1Object,
-    ...systemWeights.regular,
+    ...systemWeights.regular
   },
   semibold: {
     ...human.title1Object,
-    ...systemWeights.semibold,
+    ...systemWeights.semibold
   },
   bold: {
     ...human.title1Object,
-    ...systemWeights.bold,
+    ...systemWeights.bold
   },
   thinWhite: {
     ...human.title1WhiteObject,
-    ...systemWeights.thin,
+    ...systemWeights.thin
   },
   lightWhite: {
     ...human.title1WhiteObject,
-    ...systemWeights.light,
+    ...systemWeights.light
   },
   regularWhite: {
     ...human.title1WhiteObject,
-    ...systemWeights.regular,
+    ...systemWeights.regular
   },
   semiboldWhite: {
     ...human.title1WhiteObject,
-    ...systemWeights.semibold,
+    ...systemWeights.semibold
   },
   boldWhite: {
     ...human.title1WhiteObject,
-    ...systemWeights.bold,
-  },
+    ...systemWeights.bold
+  }
 });
 
 export default systemWeightsScreen;
