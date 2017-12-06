@@ -93,7 +93,7 @@ const getStylesForColor = color => ({
   },
   button: {
     fontSize: 14,
-    lineHeight: 16,
+    lineHeight: 20,
     ...systemWeights.semibold,
     letterSpacing: Platform.OS === "ios" ? sanFranciscoSpacing(14) : undefined,
     color: colors[color].primary
