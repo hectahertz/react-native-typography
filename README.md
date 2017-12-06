@@ -317,7 +317,7 @@ platforms:
 Absolutely! The helpers are very convenient to build your own text styles as
 they work around
 [the quirks of working with text styles on React Native](https://medium.com/@martin_adamko/react-native-quirks-2fb1ae0bbf80),
-even if you want to specify your own sizes and weights, check them out!
+even if you want to specify your own sizes and weights, [check them out!](#customization-helpers)
 
 #### The Roboto typeface line heights are not 100% accurate to the Material Styles definition
 
