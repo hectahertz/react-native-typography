@@ -5,7 +5,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { Constants } from "expo";
 import { iOSColors } from "react-native-typography";
 
-import MaterialDesignScreen from "./screens/type/MaterialDesignScreen";
+import MaterialScreen from "./screens/type/MaterialScreen";
 import HumanScreen from "./screens/type/HumanScreen";
 import iOSUIKitScreen from "./screens/type/iOSUIKitScreen";
 import IntegrationsScreen from "./screens/type/IntegrationsScreen";
@@ -71,8 +71,8 @@ const Root = DrawerNavigator(
         drawerIcon: drawerButton("logo-apple", "logo-apple")
       })
     },
-    materialDesign: {
-      screen: guidelinesStackNavigator(MaterialDesignScreen, "Material Design"),
+    material: {
+      screen: guidelinesStackNavigator(MaterialScreen, "Material Design"),
       navigationOptions: ({ navigation }) => ({
         drawerLabel: "Material Design",
         drawerIcon: drawerButton("logo-android", "logo-android")

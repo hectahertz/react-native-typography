@@ -3,7 +3,7 @@ import { View, Text } from "react-native";
 import { material } from "react-native-typography";
 import TypeDemoScreen from "./TypeDemoScreen";
 
-const MaterialDesignScreen = ({ navigation }) => {
+const MaterialScreen = ({ navigation }) => {
   return (
     <TypeDemoScreen
       navigation={navigation}
@@ -41,4 +41,4 @@ const MaterialDesignScreen = ({ navigation }) => {
   );
 };
 
-export default MaterialDesignScreen;
+export default MaterialScreen;
