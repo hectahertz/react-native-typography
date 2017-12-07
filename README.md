@@ -103,7 +103,7 @@ such as weight or letter spacing.
 ```JSX
 import { iOSUIKit } from 'react-native-typography'
 
-<Text style={iOSUIKit.largeTitleEmpasized}>Hello iOS UI Kit!</Text>
+<Text style={iOSUIKit.largeTitleEmphasized}>Hello iOS UI Kit!</Text>
 ```
 
 <img alt="iOSUIKit Collection" src="images/iosuikit-collection-ios.png" width="80%" height="80%"/>
