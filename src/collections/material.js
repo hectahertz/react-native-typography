@@ -25,77 +25,77 @@ const getStylesForColor = color => ({
     fontSize: 112,
     lineHeight: 128,
     ...systemWeights.light,
-    letterSpacing: Platform.OS === "ios" ? sanFranciscoSpacing(112) : undefined,
+    letterSpacing: sanFranciscoSpacing(112),
     color: colors[color].secondary
   },
   display3: {
     fontSize: 56,
     lineHeight: 64,
     ...systemWeights.regular,
-    letterSpacing: Platform.OS === "ios" ? sanFranciscoSpacing(56) : undefined,
+    letterSpacing: sanFranciscoSpacing(56),
     color: colors[color].secondary
   },
   display2: {
     fontSize: 45,
     lineHeight: 52,
     ...systemWeights.regular,
-    letterSpacing: Platform.OS === "ios" ? sanFranciscoSpacing(45) : undefined,
+    letterSpacing: sanFranciscoSpacing(45),
     color: colors[color].secondary
   },
   display1: {
     fontSize: 34,
     lineHeight: 40,
     ...systemWeights.regular,
-    letterSpacing: Platform.OS === "ios" ? sanFranciscoSpacing(34) : undefined,
+    letterSpacing: sanFranciscoSpacing(34),
     color: colors[color].secondary
   },
   headline: {
     fontSize: 24,
     lineHeight: 32,
     ...systemWeights.regular,
-    letterSpacing: Platform.OS === "ios" ? sanFranciscoSpacing(24) : undefined,
+    letterSpacing: sanFranciscoSpacing(24),
     color: colors[color].primary
   },
   title: {
     fontSize: 20,
     lineHeight: 28,
     ...systemWeights.semibold,
-    letterSpacing: Platform.OS === "ios" ? sanFranciscoSpacing(20) : undefined,
+    letterSpacing: sanFranciscoSpacing(20),
     color: colors[color].primary
   },
   subheading: {
     fontSize: 16,
     lineHeight: 24,
     ...systemWeights.regular,
-    letterSpacing: Platform.OS === "ios" ? sanFranciscoSpacing(16) : undefined,
+    letterSpacing: sanFranciscoSpacing(16),
     color: colors[color].primary
   },
   body2: {
     fontSize: 14,
     lineHeight: 24,
     ...systemWeights.semibold,
-    letterSpacing: Platform.OS === "ios" ? sanFranciscoSpacing(14) : undefined,
+    letterSpacing: sanFranciscoSpacing(14),
     color: colors[color].primary
   },
   body1: {
     fontSize: 14,
     lineHeight: 20,
     ...systemWeights.regular,
-    letterSpacing: Platform.OS === "ios" ? sanFranciscoSpacing(14) : undefined,
+    letterSpacing: sanFranciscoSpacing(14),
     color: colors[color].primary
   },
   caption: {
     fontSize: 12,
     lineHeight: 16,
     ...systemWeights.regular,
-    letterSpacing: Platform.OS === "ios" ? sanFranciscoSpacing(12) : undefined,
+    letterSpacing: sanFranciscoSpacing(12),
     color: colors[color].secondary
   },
   button: {
     fontSize: 14,
     lineHeight: 20,
     ...systemWeights.semibold,
-    letterSpacing: Platform.OS === "ios" ? sanFranciscoSpacing(14) : undefined,
+    letterSpacing: sanFranciscoSpacing(14),
     color: colors[color].primary
   }
 });

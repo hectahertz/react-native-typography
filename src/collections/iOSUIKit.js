@@ -14,19 +14,19 @@ const getStylesForColor = color => {
     largeTitleEmphasized: {
       ...human[`largeTitle${colorSuffix}Object`],
       ...systemWeights.bold,
-      letterSpacing: Platform.OS === "ios" ? 0.41 : undefined
+      letterSpacing: 0.41
     },
     title3: human[`title3${colorSuffix}Object`],
     title3Emphasized: {
       ...human[`title3${colorSuffix}Object`],
       ...systemWeights.semibold,
-      letterSpacing: Platform.OS === "ios" ? 0.75 : undefined
+      letterSpacing: 0.75
     },
     body: human[`body${colorSuffix}Object`],
     bodyEmphasized: {
       ...human[`body${colorSuffix}Object`],
       ...systemWeights.semibold,
-      letterSpacing: Platform.OS === "ios" ? -0.41 : undefined
+      letterSpacing: -0.41
     },
     subhead: human[`subhead${colorSuffix}Object`],
     subheadShort: {
@@ -36,20 +36,20 @@ const getStylesForColor = color => {
     subheadEmphasized: {
       ...human[`subhead${colorSuffix}Object`],
       ...systemWeights.semibold,
-      letterSpacing: Platform.OS === "ios" ? -0.24 : undefined
+      letterSpacing: -0.24
     },
     callout: human[`callout${colorSuffix}Object`],
     footnote: human[`footnote${colorSuffix}Object`],
     footnoteEmphasized: {
       ...human[`footnote${colorSuffix}Object`],
       ...systemWeights.semibold,
-      letterSpacing: Platform.OS === "ios" ? -0.08 : undefined
+      letterSpacing: -0.08
     },
     caption2: human[`caption2${colorSuffix}Object`],
     caption2Emphasized: {
       ...human[`caption2${colorSuffix}Object`],
       ...systemWeights.semibold,
-      letterSpacing: Platform.OS === "ios" ? 0.06 : undefined
+      letterSpacing: 0.06
     }
   };
 };
