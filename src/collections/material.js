@@ -37,14 +37,14 @@ const getStylesForColor = color => ({
   },
   display2: {
     fontSize: 45,
-    lineHeight: 64,
+    lineHeight: 52,
     ...systemWeights.regular,
     letterSpacing: Platform.OS === "ios" ? sanFranciscoSpacing(45) : undefined,
     color: colors[color].secondary
   },
   display1: {
     fontSize: 34,
-    lineHeight: 52,
+    lineHeight: 40,
     ...systemWeights.regular,
     letterSpacing: Platform.OS === "ios" ? sanFranciscoSpacing(34) : undefined,
     color: colors[color].secondary
