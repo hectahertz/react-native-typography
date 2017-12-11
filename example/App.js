@@ -15,6 +15,8 @@ import iOSUIKitScreen from "./screens/type/iOSUIKitScreen";
 import IntegrationsScreen from "./screens/type/IntegrationsScreen";
 import SFWeightsScreen from "./screens/type/SFWeightsScreen";
 import RobotoWeightsScreen from "./screens/type/RobotoWeightsScreen";
+import NotoCJKScreen from "./screens/type/NotoCJKScreen";
+import NotoTallScreen from "./screens/type/NotoTallScreen";
 import SystemWeightsScreen from "./screens/type/SystemWeightsScreen";
 import HumanShowcaseScreen from "./screens/showcase/HumanShowcaseScreen";
 import MaterialShowcaseScreen from "./screens/showcase/MaterialShowcaseScreen";
@@ -146,23 +148,44 @@ const Root = DrawerNavigator(
         drawerIcon: drawerButton("ios-quote", "ios-quote-outline")
       })
     },
-    weights: Platform.select({
+    ...Platform.select({
       ios: {
-        screen: guidelinesStackNavigator(
-          SFWeightsScreen,
-          "San Francisco Weights"
-        ),
-        navigationOptions: ({ navigation }) => ({
-          drawerLabel: "San Francisco Weights",
-          drawerIcon: drawerButton("logo-apple", "logo-apple")
-        })
+        sanFrancisco: {
+          screen: guidelinesStackNavigator(
+            SFWeightsScreen,
+            "San Francisco Weights"
+          ),
+          navigationOptions: ({ navigation }) => ({
+            drawerLabel: "San Francisco Weights",
+            drawerIcon: drawerButton("logo-apple", "logo-apple")
+          })
+        }
       },
       android: {
-        screen: guidelinesStackNavigator(RobotoWeightsScreen, "Roboto Weights"),
-        navigationOptions: ({ navigation }) => ({
-          drawerLabel: "Roboto Weights",
-          drawerIcon: drawerButton("logo-android", "logo-android")
-        })
+        roboto: {
+          screen: guidelinesStackNavigator(
+            RobotoWeightsScreen,
+            "Roboto Weights"
+          ),
+          navigationOptions: ({ navigation }) => ({
+            drawerLabel: "Roboto Weights",
+            drawerIcon: drawerButton("logo-android", "logo-android")
+          })
+        },
+        notoCJK: {
+          screen: guidelinesStackNavigator(NotoCJKScreen, "Noto CJK Weights"),
+          navigationOptions: ({ navigation }) => ({
+            drawerLabel: "Noto CJK Weights",
+            drawerIcon: drawerButton("logo-android", "logo-android")
+          })
+        },
+        notoTall: {
+          screen: guidelinesStackNavigator(NotoTallScreen, "Noto Tall Weights"),
+          navigationOptions: ({ navigation }) => ({
+            drawerLabel: "Noto Tall Weights",
+            drawerIcon: drawerButton("logo-android", "logo-android")
+          })
+        }
       }
     }),
     humanShowcase: {
