@@ -94,47 +94,10 @@ const Root = DrawerNavigator(
         drawerIcon: drawerButton("logo-apple", "logo-apple")
       })
     },
-    humanDense: {
-      screen: guidelinesStackNavigator(
-        HumanDenseScreen,
-        "Human Interface Dense"
-      ),
-      navigationOptions: ({ navigation }) => ({
-        drawerLabel: "Human Interface Dense",
-        drawerIcon: drawerButton("logo-apple", "logo-apple")
-      })
-    },
-    humanTall: {
-      screen: guidelinesStackNavigator(HumanTallScreen, "Human Interface Tall"),
-      navigationOptions: ({ navigation }) => ({
-        drawerLabel: "Human Interface Tall",
-        drawerIcon: drawerButton("logo-apple", "logo-apple")
-      })
-    },
     material: {
       screen: guidelinesStackNavigator(MaterialScreen, "Material Design"),
       navigationOptions: ({ navigation }) => ({
         drawerLabel: "Material Design",
-        drawerIcon: drawerButton("logo-android", "logo-android")
-      })
-    },
-    materialDense: {
-      screen: guidelinesStackNavigator(
-        MaterialDenseScreen,
-        "Material Design Dense"
-      ),
-      navigationOptions: ({ navigation }) => ({
-        drawerLabel: "Material Design Dense",
-        drawerIcon: drawerButton("logo-android", "logo-android")
-      })
-    },
-    materialTall: {
-      screen: guidelinesStackNavigator(
-        MaterialTallScreen,
-        "Material Design Tall"
-      ),
-      navigationOptions: ({ navigation }) => ({
-        drawerLabel: "Material Design Tall",
         drawerIcon: drawerButton("logo-android", "logo-android")
       })
     },
@@ -145,44 +108,34 @@ const Root = DrawerNavigator(
         drawerIcon: drawerButton("ios-construct", "ios-construct-outline")
       })
     },
-    iOSUIKitDense: {
-      screen: guidelinesStackNavigator(iOSUIKitDenseScreen, "iOSUIKit Dense"),
-      navigationOptions: ({ navigation }) => ({
-        drawerLabel: "iOSUIKit Dense",
-        drawerIcon: drawerButton("ios-construct", "ios-construct-outline")
-      })
+    humanShowcase: {
+      screen: StackNavigator({
+        Screen: { screen: HumanShowcaseScreen }
+      }),
+      navigationOptions: {
+        drawerLabel: "Showcase - Human Interface",
+        drawerIcon: drawerButton("ios-create", "ios-create-outline")
+      }
     },
-    iOSUIKitTall: {
-      screen: guidelinesStackNavigator(iOSUIKitTallScreen, "iOSUIKit Tall"),
-      navigationOptions: ({ navigation }) => ({
-        drawerLabel: "iOSUIKit Tall",
-        drawerIcon: drawerButton("ios-construct", "ios-construct-outline")
-      })
+    materialShowcase: {
+      screen: StackNavigator({
+        Screen: {
+          screen: MaterialShowcaseScreen,
+          navigationOptions: ({ navigation }) => ({
+            headerTitle: "Your Daily Mix",
+            headerLeft: openDrawerHeaderButton(navigation, iOSColors.white)
+          })
+        }
+      }),
+      navigationOptions: {
+        drawerLabel: "Showcase - Material Design",
+        drawerIcon: drawerButton("ios-create", "ios-create-outline")
+      }
     },
     systemWeights: {
       screen: guidelinesStackNavigator(SystemWeightsScreen, "System Weights"),
       navigationOptions: ({ navigation }) => ({
         drawerLabel: "System Weights",
-        drawerIcon: drawerButton("ios-quote", "ios-quote-outline")
-      })
-    },
-    systemDenseWeights: {
-      screen: guidelinesStackNavigator(
-        SystemDenseWeightsScreen,
-        "System Dense Weights"
-      ),
-      navigationOptions: ({ navigation }) => ({
-        drawerLabel: "System Dense Weights",
-        drawerIcon: drawerButton("ios-quote", "ios-quote-outline")
-      })
-    },
-    systemTallWeights: {
-      screen: guidelinesStackNavigator(
-        SystemTallWeightsScreen,
-        "System Tall Weights"
-      ),
-      navigationOptions: ({ navigation }) => ({
-        drawerLabel: "System Tall Weights",
         drawerIcon: drawerButton("ios-quote", "ios-quote-outline")
       })
     },
@@ -226,29 +179,76 @@ const Root = DrawerNavigator(
         }
       }
     }),
-    humanShowcase: {
-      screen: StackNavigator({
-        Screen: { screen: HumanShowcaseScreen }
-      }),
-      navigationOptions: {
-        drawerLabel: "Showcase - Human Interface",
-        drawerIcon: drawerButton("ios-create", "ios-create-outline")
-      }
+    systemDenseWeights: {
+      screen: guidelinesStackNavigator(
+        SystemDenseWeightsScreen,
+        "System Dense Weights"
+      ),
+      navigationOptions: ({ navigation }) => ({
+        drawerLabel: "System Dense Weights",
+        drawerIcon: drawerButton("ios-quote", "ios-quote-outline")
+      })
     },
-    materialShowcase: {
-      screen: StackNavigator({
-        Screen: {
-          screen: MaterialShowcaseScreen,
-          navigationOptions: ({ navigation }) => ({
-            headerTitle: "Your Daily Mix",
-            headerLeft: openDrawerHeaderButton(navigation, iOSColors.white)
-          })
-        }
-      }),
-      navigationOptions: {
-        drawerLabel: "Showcase - Material Design",
-        drawerIcon: drawerButton("ios-create", "ios-create-outline")
-      }
+    systemTallWeights: {
+      screen: guidelinesStackNavigator(
+        SystemTallWeightsScreen,
+        "System Tall Weights"
+      ),
+      navigationOptions: ({ navigation }) => ({
+        drawerLabel: "System Tall Weights",
+        drawerIcon: drawerButton("ios-quote", "ios-quote-outline")
+      })
+    },
+    humanDense: {
+      screen: guidelinesStackNavigator(
+        HumanDenseScreen,
+        "Human Interface Dense"
+      ),
+      navigationOptions: ({ navigation }) => ({
+        drawerLabel: "Human Interface Dense",
+        drawerIcon: drawerButton("logo-apple", "logo-apple")
+      })
+    },
+    humanTall: {
+      screen: guidelinesStackNavigator(HumanTallScreen, "Human Interface Tall"),
+      navigationOptions: ({ navigation }) => ({
+        drawerLabel: "Human Interface Tall",
+        drawerIcon: drawerButton("logo-apple", "logo-apple")
+      })
+    },
+    materialDense: {
+      screen: guidelinesStackNavigator(
+        MaterialDenseScreen,
+        "Material Design Dense"
+      ),
+      navigationOptions: ({ navigation }) => ({
+        drawerLabel: "Material Design Dense",
+        drawerIcon: drawerButton("logo-android", "logo-android")
+      })
+    },
+    materialTall: {
+      screen: guidelinesStackNavigator(
+        MaterialTallScreen,
+        "Material Design Tall"
+      ),
+      navigationOptions: ({ navigation }) => ({
+        drawerLabel: "Material Design Tall",
+        drawerIcon: drawerButton("logo-android", "logo-android")
+      })
+    },
+    iOSUIKitDense: {
+      screen: guidelinesStackNavigator(iOSUIKitDenseScreen, "iOSUIKit Dense"),
+      navigationOptions: ({ navigation }) => ({
+        drawerLabel: "iOSUIKit Dense",
+        drawerIcon: drawerButton("ios-construct", "ios-construct-outline")
+      })
+    },
+    iOSUIKitTall: {
+      screen: guidelinesStackNavigator(iOSUIKitTallScreen, "iOSUIKit Tall"),
+      navigationOptions: ({ navigation }) => ({
+        drawerLabel: "iOSUIKit Tall",
+        drawerIcon: drawerButton("ios-construct", "ios-construct-outline")
+      })
     },
     integrations: {
       screen: StackNavigator({
