@@ -282,6 +282,20 @@ const styles = StyleSheet.create({
 This is already taken care of on the collections, but if you want to define your
 own sizes you can adjust the spacing with this helper.
 
+## Dense and tall scripts
+
+Dense and tall scripts are fully supported, check [the full documentation here!](DENSE_TALL.md)
+
+```JSX
+import { materialDense } from 'react-native-typography'
+
+<Text style={materialDense.display4}>你好排版！</Text>
+```
+
+<p align="center">
+<img alt="Material Design Collection" src="images/hello-world-chinese.png" width="190" height="70"/>
+</p>
+
 ## Cross-platform
 
 Quoting
@@ -317,7 +331,8 @@ platforms:
 Absolutely! The helpers are very convenient to build your own text styles as
 they work around
 [the quirks of working with text styles on React Native](https://medium.com/@martin_adamko/react-native-quirks-2fb1ae0bbf80),
-even if you want to specify your own sizes and weights, [check them out!](#customization-helpers)
+even if you want to specify your own sizes and weights,
+[check them out!](#customization-helpers)
 
 #### The Roboto typeface line heights are not 100% accurate to the Material Styles definition
 
@@ -330,11 +345,24 @@ accurate once it gets released.
 
 #### Kerning is not 100% accurate on the Display sizes for the Material styles on Android
 
-There's no support for letter spacing on React Native Android yet ☹️
+There's no support for letter spacing on React Native Android yet. ☹️
 
 #### Where is Roboto Black?
 
-It's not available by default on React Native yet 😐
+It's not available by default on React Native Android yet. 😐
+
+#### Why are there less weights available for CJK(Chinese, Japanese, Korean) languages on Android than iOS?
+
+Android uses Noto Sans CJK (also known as Source Han Sans) to render those
+languages, and
+[even though it has seven weights](https://material.io/guidelines/style/typography.html#typography-typeface),
+they're not shipped with Android. 😕
+
+There are some issues tracking this already, hopefully they will be included in
+the future.
+
+* https://issuetracker.google.com/issues/37064674
+* https://issuetracker.google.com/issues/37106325
 
 #### I use styled-components/glamorous/etc. Can I use react-native-typography?
 
@@ -358,9 +386,6 @@ define them and just supply the desired styles from the library! 🙂
 
 ## Roadmap
 
-* Support for
-  [dense and tall scripts](https://material.io/guidelines/style/typography.html#typography-line-height)
-  on the Material collection.
 * Type with [Flow](https://flow.org/)
 
 ## Versioning
@@ -411,6 +436,7 @@ This project is licensed under the MIT License.
 * https://facebook.github.io/react-native/docs/text.html#style
 * https://medium.com/@knoland/typography-in-react-native-f09c43b5b435
 * https://developer.apple.com/videos/play/wwdc2015/804/
+* https://developer.apple.com/videos/play/wwdc2016/801/
 * https://medium.com/react-native-training/list-of-available-react-native-fonts-ed78b48bd45e
 * https://developer.apple.com/documentation/uikit/uifontdescriptor/font_weights
 * https://v1.designcode.io/iosdesign-guidelines
@@ -418,3 +444,5 @@ This project is licensed under the MIT License.
 * https://www.raizlabs.com/dev/2015/08/advanced-ios-typography/
 * https://medium.com/@sauvik_dolui/handling-fonts-in-ios-development-a-simpler-way-32d360cdc1b6
 * https://readymag.com/arzamas/132908/6/
+* https://github.com/facebook/react-native/pull/14609
+* https://github.com/react-native-training/react-native-fonts
