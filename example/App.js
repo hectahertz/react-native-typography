@@ -12,6 +12,8 @@ import HumanScreen from "./screens/type/HumanScreen";
 import HumanDenseScreen from "./screens/type/HumanDenseScreen";
 import HumanTallScreen from "./screens/type/HumanTallScreen";
 import iOSUIKitScreen from "./screens/type/iOSUIKitScreen";
+import iOSUIKitDenseScreen from "./screens/type/iOSUIKitDenseScreen";
+import iOSUIKitTallScreen from "./screens/type/iOSUIKitTallScreen";
 import IntegrationsScreen from "./screens/type/IntegrationsScreen";
 import SFWeightsScreen from "./screens/type/SFWeightsScreen";
 import RobotoWeightsScreen from "./screens/type/RobotoWeightsScreen";
@@ -90,13 +92,6 @@ const Root = DrawerNavigator(
         drawerIcon: drawerButton("logo-apple", "logo-apple")
       })
     },
-    humanTall: {
-      screen: guidelinesStackNavigator(HumanTallScreen, "Human Interface Tall"),
-      navigationOptions: ({ navigation }) => ({
-        drawerLabel: "Human Interface Tall",
-        drawerIcon: drawerButton("logo-apple", "logo-apple")
-      })
-    },
     humanDense: {
       screen: guidelinesStackNavigator(
         HumanDenseScreen,
@@ -107,20 +102,17 @@ const Root = DrawerNavigator(
         drawerIcon: drawerButton("logo-apple", "logo-apple")
       })
     },
+    humanTall: {
+      screen: guidelinesStackNavigator(HumanTallScreen, "Human Interface Tall"),
+      navigationOptions: ({ navigation }) => ({
+        drawerLabel: "Human Interface Tall",
+        drawerIcon: drawerButton("logo-apple", "logo-apple")
+      })
+    },
     material: {
       screen: guidelinesStackNavigator(MaterialScreen, "Material Design"),
       navigationOptions: ({ navigation }) => ({
         drawerLabel: "Material Design",
-        drawerIcon: drawerButton("logo-android", "logo-android")
-      })
-    },
-    materialTall: {
-      screen: guidelinesStackNavigator(
-        MaterialTallScreen,
-        "Material Design Tall"
-      ),
-      navigationOptions: ({ navigation }) => ({
-        drawerLabel: "Material Design Tall",
         drawerIcon: drawerButton("logo-android", "logo-android")
       })
     },
@@ -134,10 +126,34 @@ const Root = DrawerNavigator(
         drawerIcon: drawerButton("logo-android", "logo-android")
       })
     },
+    materialTall: {
+      screen: guidelinesStackNavigator(
+        MaterialTallScreen,
+        "Material Design Tall"
+      ),
+      navigationOptions: ({ navigation }) => ({
+        drawerLabel: "Material Design Tall",
+        drawerIcon: drawerButton("logo-android", "logo-android")
+      })
+    },
     iOSUIKit: {
       screen: guidelinesStackNavigator(iOSUIKitScreen, "iOSUIKit"),
       navigationOptions: ({ navigation }) => ({
         drawerLabel: "iOSUIKit",
+        drawerIcon: drawerButton("ios-construct", "ios-construct-outline")
+      })
+    },
+    iOSUIKitDense: {
+      screen: guidelinesStackNavigator(iOSUIKitDenseScreen, "iOSUIKit Dense"),
+      navigationOptions: ({ navigation }) => ({
+        drawerLabel: "iOSUIKit Dense",
+        drawerIcon: drawerButton("ios-construct", "ios-construct-outline")
+      })
+    },
+    iOSUIKitTall: {
+      screen: guidelinesStackNavigator(iOSUIKitTallScreen, "iOSUIKit Tall"),
+      navigationOptions: ({ navigation }) => ({
+        drawerLabel: "iOSUIKit Tall",
         drawerIcon: drawerButton("ios-construct", "ios-construct-outline")
       })
     },
