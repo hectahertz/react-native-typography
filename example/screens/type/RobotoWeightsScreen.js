@@ -1,5 +1,5 @@
 import React from "react";
-import { View, StyleSheet, Text } from "react-native";
+import { StyleSheet } from "react-native";
 import { material, robotoWeights } from "react-native-typography";
 import TypeDemoScreen from "./TypeDemoScreen";
 
@@ -7,32 +7,80 @@ const RobotoWeightsScreen = ({ navigation }) => {
   return (
     <TypeDemoScreen
       navigation={navigation}
-      renderLightSection={guides => (
-        <View>
-          <Text style={[styles.thin, guides]}>Roboto Thin</Text>
-          <Text style={[styles.light, guides]}>Roboto Light</Text>
-          <Text style={[styles.regular, guides]}>Roboto Regular</Text>
-          <Text style={[styles.medium, guides]}>Roboto Medium</Text>
-          <Text style={[styles.bold, guides]}>Roboto Bold</Text>
-          <Text style={[styles.condensed, guides]}>Roboto Condensed</Text>
-          <Text style={[styles.condensedBold, guides]}>
-            Roboto Condensed Bold
-          </Text>
-        </View>
-      )}
-      renderDarkSection={guides => (
-        <View>
-          <Text style={[styles.thinWhite, guides]}>Roboto Thin</Text>
-          <Text style={[styles.lightWhite, guides]}>Roboto Light</Text>
-          <Text style={[styles.regularWhite, guides]}>Roboto Regular</Text>
-          <Text style={[styles.mediumWhite, guides]}>Roboto Medium</Text>
-          <Text style={[styles.boldWhite, guides]}>Roboto Bold</Text>
-          <Text style={[styles.condensedWhite, guides]}>Roboto Condensed</Text>
-          <Text style={[styles.condensedBoldWhite, guides]}>
-            Roboto Condensed Bold
-          </Text>
-        </View>
-      )}
+      blackStyles={[
+        {
+          style: styles.thin,
+          text: "Roboto Thin",
+          name: "thin"
+        },
+        {
+          style: styles.light,
+          text: "Roboto Light",
+          name: "light"
+        },
+        {
+          style: styles.regular,
+          text: "Roboto Regular",
+          name: "regular"
+        },
+        {
+          style: styles.medium,
+          text: "Roboto Medium",
+          name: "medium"
+        },
+        {
+          style: styles.bold,
+          text: "Roboto Bold",
+          name: "bold"
+        },
+        {
+          style: styles.condensed,
+          text: "Roboto Condensed",
+          name: "condensed"
+        },
+        {
+          style: styles.condensedBold,
+          text: "Roboto Condensed Bold",
+          name: "condensedBold"
+        }
+      ]}
+      whiteStyles={[
+        {
+          style: styles.thinWhite,
+          text: "Roboto Thin",
+          name: "thin"
+        },
+        {
+          style: styles.lightWhite,
+          text: "Roboto Light",
+          name: "light"
+        },
+        {
+          style: styles.regularWhite,
+          text: "Roboto Regular",
+          name: "regular"
+        },
+        {
+          style: styles.mediumWhite,
+          text: "Roboto Medium",
+          name: "medium"
+        },
+        {
+          style: styles.boldWhite,
+          text: "Roboto Bold",
+          name: "bold"
+        },
+        {
+          style: styles.condensedWhite,
+          text: "Roboto Condensed",
+          name: "condensed"
+        },
+        {
+          style: styles.condensedBoldWhite,
+          text: "Roboto Condensed Bold",
+          name: "condensedBold"
+        }
+      ]}
     />
   );
 };

@@ -1,5 +1,4 @@
 import React from "react";
-import { View, Text } from "react-native";
 import { material } from "react-native-typography";
 import TypeDemoScreen from "./TypeDemoScreen";
 
@@ -7,36 +6,120 @@ const MaterialScreen = ({ navigation }) => {
   return (
     <TypeDemoScreen
       navigation={navigation}
-      renderLightSection={guides => (
-        <View>
-          <Text style={[material.display4, guides]}>Light 112</Text>
-          <Text style={[material.display3, guides]}>Regular 56</Text>
-          <Text style={[material.display2, guides]}>Regular 45</Text>
-          <Text style={[material.display1, guides]}>Regular 34</Text>
-          <Text style={[material.headline, guides]}>Regular 24</Text>
-          <Text style={[material.title, guides]}>Medium 20</Text>
-          <Text style={[material.subheading, guides]}>Regular 16</Text>
-          <Text style={[material.body2, guides]}>Medium 14</Text>
-          <Text style={[material.body1, guides]}>Regular 14</Text>
-          <Text style={[material.caption, guides]}>Regular 12</Text>
-          <Text style={[material.button, guides]}>MEDIUM 14</Text>
-        </View>
-      )}
-      renderDarkSection={guides => (
-        <View>
-          <Text style={[material.display4White, guides]}>Light 112</Text>
-          <Text style={[material.display3White, guides]}>Regular 56</Text>
-          <Text style={[material.display2White, guides]}>Regular 45</Text>
-          <Text style={[material.display1White, guides]}>Regular 34</Text>
-          <Text style={[material.headlineWhite, guides]}>Regular 24</Text>
-          <Text style={[material.titleWhite, guides]}>Medium 20</Text>
-          <Text style={[material.subheadingWhite, guides]}>Regular 16</Text>
-          <Text style={[material.body2White, guides]}>Medium 14</Text>
-          <Text style={[material.body1White, guides]}>Regular 14</Text>
-          <Text style={[material.captionWhite, guides]}>Regular 12</Text>
-          <Text style={[material.buttonWhite, guides]}>MEDIUM 14</Text>
-        </View>
-      )}
+      blackStyles={[
+        {
+          style: material.display4,
+          text: "Light 112",
+          name: "display4"
+        },
+        {
+          style: material.display3,
+          text: "Regular 56",
+          name: "display3"
+        },
+        {
+          style: material.display2,
+          text: "Regular 45",
+          name: "display2"
+        },
+        {
+          style: material.display1,
+          text: "Regular 34",
+          name: "display1"
+        },
+        {
+          style: material.headline,
+          text: "Regular 24",
+          name: "headline"
+        },
+        {
+          style: material.title,
+          text: "Medium 20",
+          name: "title"
+        },
+        {
+          style: material.subheading,
+          text: "Regular 16",
+          name: "subheading"
+        },
+        {
+          style: material.body2,
+          text: "Medium 14",
+          name: "body2"
+        },
+        {
+          style: material.body1,
+          text: "Regular 14",
+          name: "body1"
+        },
+        {
+          style: material.caption,
+          text: "Regular 12",
+          name: "caption"
+        },
+        {
+          style: material.button,
+          text: "MEDIUM 14",
+          name: "button"
+        }
+      ]}
+      whiteStyles={[
+        {
+          style: material.display4White,
+          text: "Light 112",
+          name: "display4White"
+        },
+        {
+          style: material.display3White,
+          text: "Regular 56",
+          name: "display3White"
+        },
+        {
+          style: material.display2White,
+          text: "Regular 45",
+          name: "display2White"
+        },
+        {
+          style: material.display1White,
+          text: "Regular 34",
+          name: "display1White"
+        },
+        {
+          style: material.headlineWhite,
+          text: "Regular 24",
+          name: "headlineWhite"
+        },
+        {
+          style: material.titleWhite,
+          text: "Medium 20",
+          name: "titleWhite"
+        },
+        {
+          style: material.subheadingWhite,
+          text: "Regular 16",
+          name: "subheadingWhite"
+        },
+        {
+          style: material.body2White,
+          text: "Medium 14",
+          name: "body2White"
+        },
+        {
+          style: material.body1White,
+          text: "Regular 14",
+          name: "body1White"
+        },
+        {
+          style: material.captionWhite,
+          text: "Regular 12",
+          name: "captionWhite"
+        },
+        {
+          style: material.buttonWhite,
+          text: "MEDIUM 14",
+          name: "buttonWhite"
+        }
+      ]}
     />
   );
 };

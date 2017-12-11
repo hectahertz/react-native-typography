@@ -27,16 +27,29 @@ const drawerButton = (enabledIcon, disabledIcon) => ({ focused }) => (
   />
 );
 
-const showGuidelinesHeaderButton = navigation => (
-  <TouchableOpacity
-    onPress={navigation.state.params && navigation.state.params.showGuidelines}
-  >
-    <Ionicons
-      name={Platform.OS === "ios" ? "ios-crop" : "md-crop"}
-      size={28}
-      style={{ marginRight: 16, color: iOSColors.black }}
-    />
-  </TouchableOpacity>
+const typeDemoHeaderRight = navigation => (
+  <View style={styles.headerRightButtonRow}>
+    <TouchableOpacity
+      onPress={navigation.state.params && navigation.state.params.showNames}
+    >
+      <Ionicons
+        name={Platform.OS === "ios" ? "ios-code" : "md-code"}
+        size={28}
+        style={{ paddingHorizontal: 16, color: iOSColors.black }}
+      />
+    </TouchableOpacity>
+    <TouchableOpacity
+      onPress={
+        navigation.state.params && navigation.state.params.showGuidelines
+      }
+    >
+      <Ionicons
+        name={Platform.OS === "ios" ? "ios-crop" : "md-crop"}
+        size={28}
+        style={{ paddingRight: 16, color: iOSColors.black }}
+      />
+    </TouchableOpacity>
+  </View>
 );
 
 const openDrawerHeaderButton = (navigation, color) => (
@@ -44,7 +57,7 @@ const openDrawerHeaderButton = (navigation, color) => (
     <Ionicons
       name={Platform.OS === "ios" ? "ios-menu" : "md-menu"}
       size={30}
-      style={{ marginLeft: 16, color }}
+      style={{ paddingHorizontal: 16, color }}
     />
   </TouchableOpacity>
 );
@@ -61,7 +74,7 @@ const guidelinesStackNavigator = (screen, headerTitle) =>
         headerStyle: {
           marginTop: Platform.OS === "ios" ? 0 : Constants.statusBarHeight
         },
-        headerRight: showGuidelinesHeaderButton(navigation)
+        headerRight: typeDemoHeaderRight(navigation)
       })
     }
   );
@@ -215,6 +228,9 @@ const App = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1
+  },
+  headerRightButtonRow: {
+    flexDirection: "row"
   }
 });
 

@@ -1,44 +1,127 @@
 import React from "react";
-import { View, Text } from "react-native";
 import { humanTall } from "react-native-typography";
 import TypeDemoScreen from "./TypeDemoScreen";
 
-const HumanDenseScreen = ({ navigation }) => {
+const HumanTallScreen = ({ navigation }) => {
   return (
     <TypeDemoScreen
       navigation={navigation}
-      renderLightSection={guides => (
-        <View>
-          <Text style={[humanTall.largeTitle, guides]}>แอปเปิ้ล</Text>
-          <Text style={[humanTall.title1, guides]}>แอปเปิ้ล</Text>
-          <Text style={[humanTall.title2, guides]}>แอปเปิ้ล</Text>
-          <Text style={[humanTall.title3, guides]}>แอปเปิ้ล</Text>
-          <Text style={[humanTall.headline, guides]}>แอปเปิ้ล</Text>
-          <Text style={[humanTall.body, guides]}>แอปเปิ้ล</Text>
-          <Text style={[humanTall.callout, guides]}>แอปเปิ้ล</Text>
-          <Text style={[humanTall.subhead, guides]}>แอปเปิ้ล</Text>
-          <Text style={[humanTall.footnote, guides]}>แอปเปิ้ล</Text>
-          <Text style={[humanTall.caption1, guides]}>แอปเปิ้ล</Text>
-          <Text style={[humanTall.caption2, guides]}>แอปเปิ้ล</Text>
-        </View>
-      )}
-      renderDarkSection={guides => (
-        <View>
-          <Text style={[humanTall.largeTitleWhite, guides]}>แอปเปิ้ล</Text>
-          <Text style={[humanTall.title1White, guides]}>แอปเปิ้ล</Text>
-          <Text style={[humanTall.title2White, guides]}>แอปเปิ้ล</Text>
-          <Text style={[humanTall.title3White, guides]}>แอปเปิ้ล</Text>
-          <Text style={[humanTall.headlineWhite, guides]}>แอปเปิ้ล</Text>
-          <Text style={[humanTall.bodyWhite, guides]}>แอปเปิ้ล</Text>
-          <Text style={[humanTall.calloutWhite, guides]}>แอปเปิ้ล</Text>
-          <Text style={[humanTall.subheadWhite, guides]}>แอปเปิ้ล</Text>
-          <Text style={[humanTall.footnoteWhite, guides]}>แอปเปิ้ล</Text>
-          <Text style={[humanTall.caption1White, guides]}>แอปเปิ้ล</Text>
-          <Text style={[humanTall.caption2White, guides]}>แอปเปิ้ล</Text>
-        </View>
-      )}
+      blackStyles={[
+        {
+          style: humanTall.largeTitle,
+          text: "คุณส่งอีเมลแล้ว",
+          name: "largeTitle"
+        },
+        {
+          style: humanTall.title1,
+          text: "คุณส่งอีเมลแล้ว",
+          name: "title1"
+        },
+        {
+          style: humanTall.title2,
+          text: "คุณส่งอีเมลแล้ว",
+          name: "title2"
+        },
+        {
+          style: humanTall.title3,
+          text: "คุณส่งอีเมลแล้ว",
+          name: "title3"
+        },
+        {
+          style: humanTall.headline,
+          text: "คุณส่งอีเมลแล้ว",
+          name: "headline"
+        },
+        {
+          style: humanTall.body,
+          text: "คุณส่งอีเมลแล้ว",
+          name: "body"
+        },
+        {
+          style: humanTall.callout,
+          text: "คุณส่งอีเมลแล้ว",
+          name: "callout"
+        },
+        {
+          style: humanTall.subhead,
+          text: "คุณส่งอีเมลแล้ว",
+          name: "subhead"
+        },
+        {
+          style: humanTall.footnote,
+          text: "คุณส่งอีเมลแล้ว",
+          name: "footnote"
+        },
+        {
+          style: humanTall.caption1,
+          text: "คุณส่งอีเมลแล้ว",
+          name: "caption1"
+        },
+        {
+          style: humanTall.caption2,
+          text: "คุณส่งอีเมลแล้ว",
+          name: "caption2"
+        }
+      ]}
+      whiteStyles={[
+        {
+          style: humanTall.largeTitleWhite,
+          text: "คุณส่งอีเมลแล้ว",
+          name: "largeTitleWhite"
+        },
+        {
+          style: humanTall.title1White,
+          text: "คุณส่งอีเมลแล้ว",
+          name: "title1White"
+        },
+        {
+          style: humanTall.title2White,
+          text: "คุณส่งอีเมลแล้ว",
+          name: "title2White"
+        },
+        {
+          style: humanTall.title3White,
+          text: "คุณส่งอีเมลแล้ว",
+          name: "title3White"
+        },
+        {
+          style: humanTall.headlineWhite,
+          text: "คุณส่งอีเมลแล้ว",
+          name: "headlineWhite"
+        },
+        {
+          style: humanTall.bodyWhite,
+          text: "คุณส่งอีเมลแล้ว",
+          name: "bodyWhite"
+        },
+        {
+          style: humanTall.calloutWhite,
+          text: "คุณส่งอีเมลแล้ว",
+          name: "calloutWhite"
+        },
+        {
+          style: humanTall.subheadWhite,
+          text: "คุณส่งอีเมลแล้ว",
+          name: "subheadWhite"
+        },
+        {
+          style: humanTall.footnoteWhite,
+          text: "คุณส่งอีเมลแล้ว",
+          name: "footnoteWhite"
+        },
+        {
+          style: humanTall.caption1White,
+          text: "คุณส่งอีเมลแล้ว",
+          name: "caption1White"
+        },
+        {
+          style: humanTall.caption2White,
+          text: "คุณส่งอีเมลแล้ว",
+          name: "caption2White"
+        }
+      ]}
     />
   );
 };
 
-export default HumanDenseScreen;
+export default HumanTallScreen;
