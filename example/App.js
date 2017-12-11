@@ -20,6 +20,8 @@ import RobotoWeightsScreen from "./screens/type/RobotoWeightsScreen";
 import NotoCJKScreen from "./screens/type/NotoCJKScreen";
 import NotoTallScreen from "./screens/type/NotoTallScreen";
 import SystemWeightsScreen from "./screens/type/SystemWeightsScreen";
+import SystemDenseWeightsScreen from "./screens/type/SystemDenseWeightsScreen";
+import SystemTallWeightsScreen from "./screens/type/SystemTallWeightsScreen";
 import HumanShowcaseScreen from "./screens/showcase/HumanShowcaseScreen";
 import MaterialShowcaseScreen from "./screens/showcase/MaterialShowcaseScreen";
 
@@ -161,6 +163,26 @@ const Root = DrawerNavigator(
       screen: guidelinesStackNavigator(SystemWeightsScreen, "System Weights"),
       navigationOptions: ({ navigation }) => ({
         drawerLabel: "System Weights",
+        drawerIcon: drawerButton("ios-quote", "ios-quote-outline")
+      })
+    },
+    systemDenseWeights: {
+      screen: guidelinesStackNavigator(
+        SystemDenseWeightsScreen,
+        "System Dense Weights"
+      ),
+      navigationOptions: ({ navigation }) => ({
+        drawerLabel: "System Dense Weights",
+        drawerIcon: drawerButton("ios-quote", "ios-quote-outline")
+      })
+    },
+    systemTallWeights: {
+      screen: guidelinesStackNavigator(
+        SystemTallWeightsScreen,
+        "System Tall Weights"
+      ),
+      navigationOptions: ({ navigation }) => ({
+        drawerLabel: "System Tall Weights",
         drawerIcon: drawerButton("ios-quote", "ios-quote-outline")
       })
     },
