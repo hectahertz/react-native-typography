@@ -4,7 +4,11 @@ export { default as iOSUIKit } from "./collections/iOSUIKit";
 
 export { default as sanFranciscoWeights } from "./helpers/sanFranciscoWeights";
 export { default as robotoWeights } from "./helpers/robotoWeights";
+export { default as notoCJKWeights } from "./helpers/notoCJKWeights";
+export { default as notoTallWeights } from "./helpers/notoTallWeights";
 export { default as systemWeights } from "./helpers/systemWeights";
+export { default as systemDenseWeights } from "./helpers/systemDenseWeights";
+export { default as systemTallWeights } from "./helpers/systemTallWeights";
 export { default as sanFranciscoSpacing } from "./helpers/sanFranciscoSpacing";
 export { default as iOSColors } from "./helpers/iOSColors";
 export { default as materialColors } from "./helpers/materialColors";
