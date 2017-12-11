@@ -1,5 +1,5 @@
 import React from "react";
-import { View, StyleSheet, Text } from "react-native";
+import { StyleSheet } from "react-native";
 import { human, sanFranciscoWeights } from "react-native-typography";
 import TypeDemoScreen from "./TypeDemoScreen";
 
@@ -7,40 +7,100 @@ const sanFranciscoWeightsScreen = ({ navigation }) => {
   return (
     <TypeDemoScreen
       navigation={navigation}
-      renderLightSection={guides => (
-        <View>
-          <Text style={[styles.thin, guides]}>San Francisco Thin</Text>
-          <Text style={[styles.ultraLight, guides]}>
-            San Francisco Ultralight
-          </Text>
-          <Text style={[styles.light, guides]}>San Francisco Light</Text>
-          <Text style={[styles.regular, guides]}>San Francisco Regular</Text>
-          <Text style={[styles.medium, guides]}>San Francisco Medium</Text>
-          <Text style={[styles.semibold, guides]}>San Francisco Semi-Bold</Text>
-          <Text style={[styles.bold, guides]}>San Francisco Bold</Text>
-          <Text style={[styles.heavy, guides]}>San Francisco Heavy</Text>
-          <Text style={[styles.black, guides]}>San Francisco Black</Text>
-        </View>
-      )}
-      renderDarkSection={guides => (
-        <View>
-          <Text style={[styles.thinWhite, guides]}>San Francisco Thin</Text>
-          <Text style={[styles.ultraLightWhite, guides]}>
-            San Francisco Ultralight
-          </Text>
-          <Text style={[styles.lightWhite, guides]}>San Francisco Light</Text>
-          <Text style={[styles.regularWhite, guides]}>
-            San Francisco Regular
-          </Text>
-          <Text style={[styles.mediumWhite, guides]}>San Francisco Medium</Text>
-          <Text style={[styles.semiboldWhite, guides]}>
-            San Francisco Semi-Bold
-          </Text>
-          <Text style={[styles.boldWhite, guides]}>San Francisco Bold</Text>
-          <Text style={[styles.heavyWhite, guides]}>San Francisco Heavy</Text>
-          <Text style={[styles.blackWhite, guides]}>San Francisco Black</Text>
-        </View>
-      )}
+      blackStyles={[
+        {
+          style: styles.thin,
+          text: "San Francisco Thin",
+          name: "thin"
+        },
+        {
+          style: styles.ultraLight,
+          text: "San Francisco Ultralight",
+          name: "ultraLight"
+        },
+        {
+          style: styles.light,
+          text: "San Francisco Light",
+          name: "light"
+        },
+        {
+          style: styles.regular,
+          text: "San Francisco Regular",
+          name: "regular"
+        },
+        {
+          style: styles.medium,
+          text: "San Francisco Medium",
+          name: "medium"
+        },
+        {
+          style: styles.semibold,
+          text: "San Francisco Semi-Bold",
+          name: "semibold"
+        },
+        {
+          style: styles.bold,
+          text: "San Francisco Bold",
+          name: "bold"
+        },
+        {
+          style: styles.heavy,
+          text: "San Francisco Heavy",
+          name: "heavy"
+        },
+        {
+          style: styles.black,
+          text: "San Francisco Black",
+          name: "black"
+        }
+      ]}
+      whiteStyles={[
+        {
+          style: styles.thinWhite,
+          text: "San Francisco Thin",
+          name: "thin"
+        },
+        {
+          style: styles.ultraLightWhite,
+          text: "San Francisco Ultralight",
+          name: "ultraLight"
+        },
+        {
+          style: styles.lightWhite,
+          text: "San Francisco Light",
+          name: "light"
+        },
+        {
+          style: styles.regularWhite,
+          text: "San Francisco Regular",
+          name: "regular"
+        },
+        {
+          style: styles.mediumWhite,
+          text: "San Francisco Medium",
+          name: "medium"
+        },
+        {
+          style: styles.semiboldWhite,
+          text: "San Francisco Semi-Bold",
+          name: "semibold"
+        },
+        {
+          style: styles.boldWhite,
+          text: "San Francisco Bold",
+          name: "bold"
+        },
+        {
+          style: styles.heavyWhite,
+          text: "San Francisco Heavy",
+          name: "heavy"
+        },
+        {
+          style: styles.blackWhite,
+          text: "San Francisco Black",
+          name: "black"
+        }
+      ]}
     />
   );
 };

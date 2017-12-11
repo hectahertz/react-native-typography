@@ -1,5 +1,5 @@
 import React from "react";
-import { View, StyleSheet, Text } from "react-native";
+import { StyleSheet } from "react-native";
 import { human, systemWeights } from "react-native-typography";
 import TypeDemoScreen from "./TypeDemoScreen";
 
@@ -7,24 +7,60 @@ const systemWeightsScreen = ({ navigation }) => {
   return (
     <TypeDemoScreen
       navigation={navigation}
-      renderLightSection={guides => (
-        <View>
-          <Text style={[styles.thin, guides]}>System Thin</Text>
-          <Text style={[styles.light, guides]}>System Light</Text>
-          <Text style={[styles.regular, guides]}>System Regular</Text>
-          <Text style={[styles.semibold, guides]}>System Semibold</Text>
-          <Text style={[styles.bold, guides]}>System Bold</Text>
-        </View>
-      )}
-      renderDarkSection={guides => (
-        <View>
-          <Text style={[styles.thinWhite, guides]}>System Thin</Text>
-          <Text style={[styles.lightWhite, guides]}>System Light</Text>
-          <Text style={[styles.regularWhite, guides]}>System Regular</Text>
-          <Text style={[styles.semiboldWhite, guides]}>System Semibold</Text>
-          <Text style={[styles.boldWhite, guides]}>System Bold</Text>
-        </View>
-      )}
+      blackStyles={[
+        {
+          style: styles.thin,
+          text: "System Thin",
+          name: "thin"
+        },
+        {
+          style: styles.light,
+          text: "System Light",
+          name: "light"
+        },
+        {
+          style: styles.regular,
+          text: "System Regular",
+          name: "regular"
+        },
+        {
+          style: styles.semibold,
+          text: "System Semibold",
+          name: "semibold"
+        },
+        {
+          style: styles.bold,
+          text: "System Bold",
+          name: "bold"
+        }
+      ]}
+      whiteStyles={[
+        {
+          style: styles.thinWhite,
+          text: "System Thin",
+          name: "thin"
+        },
+        {
+          style: styles.lightWhite,
+          text: "System Light",
+          name: "light"
+        },
+        {
+          style: styles.regularWhite,
+          text: "System Regular",
+          name: "regular"
+        },
+        {
+          style: styles.semiboldWhite,
+          text: "System Semibold",
+          name: "semibold"
+        },
+        {
+          style: styles.boldWhite,
+          text: "System Bold",
+          name: "bold"
+        }
+      ]}
     />
   );
 };
