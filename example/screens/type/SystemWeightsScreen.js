@@ -3,7 +3,7 @@ import { StyleSheet } from "react-native";
 import { human, systemWeights } from "react-native-typography";
 import TypeDemoScreen from "./TypeDemoScreen";
 
-const systemWeightsScreen = ({ navigation }) => {
+const SystemWeightsScreen = ({ navigation }) => {
   return (
     <TypeDemoScreen
       navigation={navigation}
@@ -108,4 +108,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default systemWeightsScreen;
+export default SystemWeightsScreen;
