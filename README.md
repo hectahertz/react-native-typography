@@ -381,8 +381,8 @@ The StyleSheet/Object pattern is
 in the React Native codebase to provide an easy way to extend exported
 StyleSheets.
 
-If you enjoy using already styles components for your text, you can easily
-define them and just supply the desired styles from the library! 🙂
+If you enjoy using pre-styled components for your text, you can easily
+define them and just supply the desired styles from this library! 🙂
 
 ## Roadmap
 
