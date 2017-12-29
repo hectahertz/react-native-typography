@@ -19,7 +19,7 @@ it requires a lot of fiddling and handling edge cases.
 
 This library provides a good set of defaults and helpers that cover the majority
 of the cases you'll need, make your code much simpler and ✨*bonus*✨ render
-great [on both platforms](#cross-platform) 😄
+great [on iOS, Android and the web](#cross-platform) 😄
 
 ## Quick start
 
@@ -178,7 +178,7 @@ const styles = StyleSheet.create({
 import { systemWeights } from 'react-native-typography'
 ```
 
-The System weights render visually similar weights of the **San Francisco/Roboto
+The System weights render visually similar weights of the **Native
 typefaces** on each platform.
 [Read more about cross-platform here.](#cross-platform)
 
@@ -192,13 +192,15 @@ makes it more future–proof.
 
 <img alt="System Weights Android" src="images/system-weights-android.png" width="80%" height="80%"/>
 
+<img alt="System Weights Web" src="images/system-weights-web.png" width="80%" height="80%"/>
+
 #### San Francisco Weights
 
 ```JSX
 import { sanFranciscoWeights } from 'react-native-typography'
 ```
 
-These weights are **only functional on iOS**, as they directly reference the
+These weights are **only intended for iOS**, as they directly reference the
 native San Francisco typeface.
 
 <img alt="San Francisco Weights" src="images/san-francisco-weights.png" width="80%" height="50%"/>
@@ -209,10 +211,20 @@ native San Francisco typeface.
 import { robotoWeights } from 'react-native-typography'
 ```
 
-These weights are **only functional on Android**, as they directly reference the
+These weights are **only intended for Android**, as they directly reference the
 native Roboto typeface.
 
 <img alt="Roboto Weights" src="images/roboto-weights.png" width="80%" height="80%"/>
+
+#### Web Weights
+
+```JSX
+import { webWeights } from 'react-native-typography'
+```
+
+These weights are **only intended for the web**, and render [react-native-web](https://github.com/necolas/react-native-web)'s system font stack.
+
+<img alt="Web Weights" src="images/web-weights.png" width="80%" height="80%"/>
 
 ### Colors
 
@@ -260,12 +272,14 @@ const styles = StyleSheet.create({
 
 #### San Francisco
 
-The San Francisco typeface on iOS defines its letter spacing via Kerning. This
+The San Francisco typeface defines its letter spacing via Kerning. This
 is not compatible with the React Native text style properties, as they take
 letter-spacing instead.
 
-To perform this conversion you can use the `sanFranciscoSpacing` function, which
+To perform this conversion on iOS you can use the `sanFranciscoSpacing` function, which
 receives the font size and returns the appropriate letter spacing.
+
+This is not needed for the web as the browsers already take care of this.
 
 ```JSX
 import { sanFranciscoSpacing } from 'react-native-typography'
@@ -280,7 +294,7 @@ const styles = StyleSheet.create({
 ```
 
 This is already taken care of on the collections, but if you want to define your
-own sizes you can adjust the spacing with this helper.
+own sizes you can adjust the spacing on iOS with this helper.
 
 ## Dense and tall scripts
 
@@ -307,12 +321,11 @@ Quoting
 > features.
 
 This is the approach that we like to follow, and all the collections exported
-from this library render nicely on both platforms with their respective native
-typefaces, for that we use the [System](#system) weight helper.
+from this library render nicely on all the supported platforms with their respective native
+typefaces, for that we use the [System](#system-weights) weight helper.
 
 You can [check the code of the example app](example/App.js) where we included a
-couple of screens that follow this philosophy, this is how they render on both
-platforms:
+couple of screens that follow this philosophy, this is how they render on iOS and Android:
 
 <p align="center">
 <img alt="React Native Typography Human Showcase on iOS" src="images/showcase-human-ios.png" width="49.7%"/>
