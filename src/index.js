@@ -12,6 +12,7 @@ export { default as sanFranciscoWeights } from "./helpers/sanFranciscoWeights";
 export { default as robotoWeights } from "./helpers/robotoWeights";
 export { default as notoCJKWeights } from "./helpers/notoCJKWeights";
 export { default as notoTallWeights } from "./helpers/notoTallWeights";
+export { default as webWeights } from "./helpers/webWeights";
 export { default as systemWeights } from "./helpers/systemWeights";
 export { default as systemDenseWeights } from "./helpers/systemDenseWeights";
 export { default as systemTallWeights } from "./helpers/systemTallWeights";
