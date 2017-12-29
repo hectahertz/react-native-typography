@@ -1,6 +1,6 @@
 {
   "name": "react-native-typography",
-  "version": "1.1.0",
+  "version": "1.2.1",
   "description":
     "Pixel–perfect, native–looking typographic styles for React Native",
   "main": "src/index.js",
