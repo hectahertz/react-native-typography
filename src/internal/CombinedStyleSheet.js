@@ -9,7 +9,7 @@ import suffixProperties from "./suffixProperties";
  *
  *   const styles = StyleSheet.create({
  *     wrapper: {
- *       ...material.title1,
+ *       ...material.title1Object,
  *       color: 'palevioletred',
  *     },
  *   });
