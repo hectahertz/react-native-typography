@@ -1,7 +1,7 @@
 import React from "react";
 import { StyleSheet, View, ScrollView, Text, StatusBar } from "react-native";
 import { iOSColors, human } from "react-native-typography";
-import styled from "styled-components/native";
+import styled from "styled-components";
 import glamorous from "glamorous-native";
 
 const { Text: GlamorousBuiltInText } = glamorous;
