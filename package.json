@@ -3,12 +3,13 @@
   "version": "1.2.1",
   "description":
     "Pixel–perfect, native–looking typographic styles for React Native",
-  "main": "src/index.js",
-  "files": ["src/"],
+  "main": "dist/index.js",
+  "files": ["src/", "dist/"],
   "directories": {
     "example": "example"
   },
   "scripts": {
+    "build": "rm -rf dist && babel src --out-dir dist",
     "format": "prettier --write '**/*.js'",
     "precommit": "lint-staged",
     "test": "echo \\\"Error: no test specified\\\" && exit 1"
@@ -41,6 +42,8 @@
     "react-native": "*"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react-native": "^4.0.0",
     "husky": "^0.14.3",
     "lint-staged": "^6.0.0",
     "prettier": "1.9.1"
