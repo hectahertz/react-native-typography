@@ -4939,9 +4939,9 @@ react-native-tab-view@^0.0.70:
   dependencies:
     prop-types "^15.5.10"
 
-react-native-typography@^1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/react-native-typography/-/react-native-typography-1.2.1.tgz#380c71a71e4a4774bd2ca81971aabc6ecf3cb195"
+react-native-typography@^1.3.0:
+  version "1.3.0"
+  resolved "http://npmo.dc.xing.com:8080/r/react-native-typography/_attachments/react-native-typography-1.3.0.tgz#23563f756cd14a44bd058efc3f1255aed7517ff8"
 
 react-native-vector-icons@4.4.2:
   version "4.4.2"
