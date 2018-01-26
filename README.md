@@ -1,4 +1,4 @@
-# <img alt="React Native typography" src="images/logo.png" width="275"/>
+# <img alt="React Native typography" src="https://raw.githubusercontent.com/hectahertz/react-native-typography/HEAD/images/logo.png" width="275"/>
 
 Pixel–perfect, native–looking typographic styles for React Native.
 
@@ -7,8 +7,8 @@ Pixel–perfect, native–looking typographic styles for React Native.
 [![npm downloads](https://img.shields.io/npm/dm/react-native-typography.svg)](https://www.npmjs.com/package/react-native-typography)
 
 <p align="center">
-<img alt="React Native Typography Human Showcase" src="images/showcase-human-ios.png" width="49.7%"/>
-<img alt="React Native Typography Material Showcase" src="images/showcase-material-android.png" width="49.7%"/>
+<img alt="React Native Typography Human Showcase" src="https://raw.githubusercontent.com/hectahertz/react-native-typography/HEAD/images/showcase-human-ios.png" width="49.7%"/>
+<img alt="React Native Typography Material Showcase" src="https://raw.githubusercontent.com/hectahertz/react-native-typography/HEAD/images/showcase-material-android.png" width="49.7%"/>
 </p>
 
 ## Why
@@ -40,7 +40,7 @@ import { material } from 'react-native-typography'
 And it will look like this:
 
 <p align="center">
-<img alt="Material Design Collection" src="images/hello-world.png" width="40%" height="40%"/>
+<img alt="Material Design Collection" src="https://raw.githubusercontent.com/hectahertz/react-native-typography/HEAD/images/hello-world.png" width="40%" height="40%"/>
 </p>
 
 ### Example app
@@ -73,7 +73,7 @@ import { material } from 'react-native-typography'
 <Text style={material.display4}>Hello Material!</Text>
 ```
 
-<img alt="Material Design Collection" src="images/material-collection-android.png" width="80%" height="80%"/>
+<img alt="Material Design Collection" src="https://raw.githubusercontent.com/hectahertz/react-native-typography/HEAD/images/material-collection-android.png" width="80%" height="80%"/>
 
 ### Human Interface Guidelines
 
@@ -87,7 +87,7 @@ import { human } from 'react-native-typography'
 <Text style={human.largeTitle}>Hello Human!</Text>
 ```
 
-<img alt="Human Interface Collection" src="images/human-collection-ios.png" width="80%" height="80%"/>
+<img alt="Human Interface Collection" src="https://raw.githubusercontent.com/hectahertz/react-native-typography/HEAD/images/human-collection-ios.png" width="80%" height="80%"/>
 
 ### iOSUIKit
 
@@ -106,7 +106,7 @@ import { iOSUIKit } from 'react-native-typography'
 <Text style={iOSUIKit.largeTitleEmphasized}>Hello iOS UI Kit!</Text>
 ```
 
-<img alt="iOSUIKit Collection" src="images/iosuikit-collection-ios.png" width="80%" height="80%"/>
+<img alt="iOSUIKit Collection" src="https://raw.githubusercontent.com/hectahertz/react-native-typography/HEAD/images/iosuikit-collection-ios.png" width="80%" height="80%"/>
 
 ## Customization & Helpers
 
@@ -188,11 +188,11 @@ different visual styles for each platform.
 They follow the San Francisco naming convention, as it has more steps, which
 makes it more future–proof.
 
-<img alt="System Weights iOS" src="images/system-weights-ios.png" width="80%" height="80%"/>
+<img alt="System Weights iOS" src="https://raw.githubusercontent.com/hectahertz/react-native-typography/HEAD/images/system-weights-ios.png" width="80%" height="80%"/>
 
-<img alt="System Weights Android" src="images/system-weights-android.png" width="80%" height="80%"/>
+<img alt="System Weights Android" src="https://raw.githubusercontent.com/hectahertz/react-native-typography/HEAD/images/system-weights-android.png" width="80%" height="80%"/>
 
-<img alt="System Weights Web" src="images/system-weights-web.png" width="80%" height="80%"/>
+<img alt="System Weights Web" src="https://raw.githubusercontent.com/hectahertz/react-native-typography/HEAD/images/system-weights-web.png" width="80%" height="80%"/>
 
 #### San Francisco Weights
 
@@ -203,7 +203,7 @@ import { sanFranciscoWeights } from 'react-native-typography'
 These weights are **only intended for iOS**, as they directly reference the
 native San Francisco typeface.
 
-<img alt="San Francisco Weights" src="images/san-francisco-weights.png" width="80%" height="50%"/>
+<img alt="San Francisco Weights" src="https://raw.githubusercontent.com/hectahertz/react-native-typography/HEAD/images/san-francisco-weights.png" width="80%" height="50%"/>
 
 #### Roboto Weights
 
@@ -214,7 +214,7 @@ import { robotoWeights } from 'react-native-typography'
 These weights are **only intended for Android**, as they directly reference the
 native Roboto typeface.
 
-<img alt="Roboto Weights" src="images/roboto-weights.png" width="80%" height="80%"/>
+<img alt="Roboto Weights" src="https://raw.githubusercontent.com/hectahertz/react-native-typography/HEAD/images/roboto-weights.png" width="80%" height="80%"/>
 
 #### Web Weights
 
@@ -224,7 +224,7 @@ import { webWeights } from 'react-native-typography'
 
 These weights are **only intended for the web**, and render [react-native-web](https://github.com/necolas/react-native-web)'s system font stack.
 
-<img alt="Web Weights" src="images/web-weights.png" width="80%" height="80%"/>
+<img alt="Web Weights" src="https://raw.githubusercontent.com/hectahertz/react-native-typography/HEAD/images/web-weights.png" width="80%" height="80%"/>
 
 ### Colors
 
@@ -236,7 +236,7 @@ We also include the default text color hex values for each platform.
 import { iOSColors } from 'react-native-typography'
 ```
 
-<img alt="Colors iOS" src="images/ios-colors.png" width="50%" height="50%"/>
+<img alt="Colors iOS" src="https://raw.githubusercontent.com/hectahertz/react-native-typography/HEAD/images/ios-colors.png" width="50%" height="50%"/>
 
 ```JSX
 const styles = StyleSheet.create({
@@ -255,7 +255,7 @@ const styles = StyleSheet.create({
 import { materialColors } from 'react-native-typography'
 ```
 
-<img alt="Colors Material" src="images/material-colors.png" width="50%" height="50%"/>
+<img alt="Colors Material" src="https://raw.githubusercontent.com/hectahertz/react-native-typography/HEAD/images/material-colors.png" width="50%" height="50%"/>
 
 ```JSX
 const styles = StyleSheet.create({
@@ -307,7 +307,7 @@ import { materialDense } from 'react-native-typography'
 ```
 
 <p align="center">
-<img alt="Material Design Collection" src="images/hello-world-chinese.png" width="190" height="70"/>
+<img alt="Material Design Collection" src="https://raw.githubusercontent.com/hectahertz/react-native-typography/HEAD/images/hello-world-chinese.png" width="190" height="70"/>
 </p>
 
 ## Cross-platform
@@ -328,13 +328,13 @@ You can [check the code of the example app](example/App.js) where we included a
 couple of screens that follow this philosophy, this is how they render on iOS and Android:
 
 <p align="center">
-<img alt="React Native Typography Human Showcase on iOS" src="images/showcase-human-ios.png" width="49.7%"/>
-<img alt="React Native Typography Human Showcase on Android" src="images/showcase-human-android.png" width="49.7%"/>
+<img alt="React Native Typography Human Showcase on iOS" src="https://raw.githubusercontent.com/hectahertz/react-native-typography/HEAD/images/showcase-human-ios.png" width="49.7%"/>
+<img alt="React Native Typography Human Showcase on Android" src="https://raw.githubusercontent.com/hectahertz/react-native-typography/HEAD/images/showcase-human-android.png" width="49.7%"/>
 </p>
 
 <p align="center">
-<img alt="React Native Typography Human Showcase on iOS" src="images/showcase-material-ios.png" width="49.7%"/>
-<img alt="React Native Typography Material Showcase on Android" src="images/showcase-material-android.png" width="49.7%"/>
+<img alt="React Native Typography Human Showcase on iOS" src="https://raw.githubusercontent.com/hectahertz/react-native-typography/HEAD/images/showcase-material-ios.png" width="49.7%"/>
+<img alt="React Native Typography Material Showcase on Android" src="https://raw.githubusercontent.com/hectahertz/react-native-typography/HEAD/images/showcase-material-android.png" width="49.7%"/>
 </p>
 
 ## F.A.Q.
