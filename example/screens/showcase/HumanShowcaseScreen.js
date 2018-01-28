@@ -6,6 +6,7 @@ import {
   Text,
   Platform,
   Image,
+  ImageBackground,
   TouchableOpacity,
   StatusBar
 } from "react-native";
@@ -44,7 +45,11 @@ const headerStyles = StyleSheet.create({
 
 const TouchableRoundedImage = ({ style, ...props }) => (
   <TouchableOpacity style={style}>
-    <Image borderRadius={6} style={styles.touchableRoundedImage} {...props} />
+    <ImageBackground
+      borderRadius={6}
+      style={styles.touchableRoundedImage}
+      {...props}
+    />
   </TouchableOpacity>
 );
 

@@ -5,7 +5,7 @@ import {
   FlatList,
   Text,
   Platform,
-  Image,
+  ImageBackground,
   TouchableOpacity,
   StatusBar
 } from "react-native";
@@ -78,7 +78,7 @@ const SongRow = ({ number, cover, song, author, duration }) => {
   return (
     <TouchableOpacity style={songRowStyles.row}>
       <Text style={songRowStyles.number}>{number}</Text>
-      <Image style={songRowStyles.image} source={cover} />
+      <ImageBackground style={songRowStyles.image} source={cover} />
       <View style={songRowStyles.column}>
         <Text style={material.body2}>{song}</Text>
         <Text style={material.caption}>{author}</Text>
@@ -181,7 +181,7 @@ export class MaterialShowcaseScreen extends React.Component {
     return (
       <View style={styles.screenContainer}>
         <StatusBar barStyle="light-content" />
-        <Image
+        <ImageBackground
           style={styles.image}
           source={require("../../assets/sasha-freemind-186664_2x.png")}
         >
@@ -192,7 +192,7 @@ export class MaterialShowcaseScreen extends React.Component {
               <Text style={styles.bold}>Typography</Text>
             </Text>
           </View>
-        </Image>
+        </ImageBackground>
         <View style={Platform.OS === "ios" && { zIndex: 1 }}>
           <View style={styles.fabCircle}>
             <MaterialCommunityIcons
