@@ -10,7 +10,6 @@ import {
   StatusBar
 } from "react-native";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
-import { Constants } from "expo";
 
 import {
   material,
@@ -135,7 +134,6 @@ const headerStyles = StyleSheet.create({
   headerStyle: {
     position: "absolute",
     zIndex: 100,
-    top: Platform.OS === "ios" ? 0 : Constants.statusBarHeight,
     left: 0,
     right: 0,
     backgroundColor: "transparent",

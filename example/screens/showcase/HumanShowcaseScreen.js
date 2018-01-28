@@ -10,7 +10,6 @@ import {
   StatusBar
 } from "react-native";
 import { FontAwesome } from "@expo/vector-icons";
-import { Constants } from "expo";
 
 import {
   iOSColors,
@@ -21,7 +20,6 @@ import {
 
 const headerStyles = StyleSheet.create({
   whiteHeader: {
-    marginTop: Platform.OS === "ios" ? 0 : Constants.statusBarHeight,
     height: 44,
     backgroundColor: iOSColors.white,
     borderBottomWidth: 0,
