@@ -347,15 +347,6 @@ they work around
 even if you want to specify your own sizes and weights,
 [check them out!](#customization-helpers)
 
-#### The Roboto typeface line heights are not 100% accurate to the Material Styles definition
-
-This is a
-[known React Native issue](https://github.com/facebook/react-native/issues/10712).
-
-There's a [pull request](https://github.com/facebook/react-native/pull/16448)
-ready that fixes this, this library will be updated to make the heights 100%
-accurate once it gets released.
-
 #### Kerning is not 100% accurate on the Display sizes for the Material styles on Android
 
 There's no support for letter spacing on React Native Android yet. ☹️
