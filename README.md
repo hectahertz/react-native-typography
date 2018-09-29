@@ -388,10 +388,6 @@ StyleSheets.
 If you enjoy using pre-styled components for your text, you can easily
 define them and just supply the desired styles from this library! 🙂
 
-## Roadmap
-
-* Type with [Flow](https://flow.org/)
-
 ## Versioning
 
 We use [SemVer](http://semver.org/) for versioning. For the versions available,
