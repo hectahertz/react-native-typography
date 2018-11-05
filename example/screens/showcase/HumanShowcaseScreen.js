@@ -9,7 +9,7 @@ import {
   ImageBackground,
   TouchableOpacity,
   StatusBar
-} from "react-native";
+} from "react-primitives";
 import { FontAwesome } from "@expo/vector-icons";
 
 import {

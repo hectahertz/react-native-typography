@@ -8,7 +8,7 @@ import {
   ImageBackground,
   TouchableOpacity,
   StatusBar
-} from "react-native";
+} from "react-primitives";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 import {

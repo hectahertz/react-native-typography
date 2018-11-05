@@ -7,7 +7,7 @@ import {
   StatusBar,
   UIManager,
   LayoutAnimation
-} from "react-native";
+} from "react-primitives";
 import { human, materialColors, systemWeights } from "react-native-typography";
 
 export class TypeDemoScreen extends React.Component {

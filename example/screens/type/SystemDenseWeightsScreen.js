@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet } from "react-native";
+import { StyleSheet } from "react-primitives";
 import { human, systemDenseWeights } from "react-native-typography";
 import TypeDemoScreen from "./TypeDemoScreen";
 
