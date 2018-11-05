@@ -41,7 +41,7 @@
   "dependencies": {},
   "peerDependencies": {
     "react": "*",
-    "react-native": "*"
+    "react-primitives": "*"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
