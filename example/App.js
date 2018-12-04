@@ -24,9 +24,9 @@ import SystemTallWeightsScreen from "./screens/type/SystemTallWeightsScreen";
 import HumanShowcaseScreen from "./screens/showcase/HumanShowcaseScreen";
 import MaterialShowcaseScreen from "./screens/showcase/MaterialShowcaseScreen";
 
-const drawerButton = (enabledIcon, disabledIcon) => ({ focused }) => (
+const drawerButton = icon => ({ focused }) => (
   <Ionicons
-    name={focused ? enabledIcon : disabledIcon}
+    name={icon}
     size={28}
     style={{ color: focused ? iOSColors.blue : iOSColors.gray }}
   />
@@ -86,21 +86,21 @@ const Root = DrawerNavigator({
     screen: guidelinesStackNavigator(HumanScreen, "Human Interface"),
     navigationOptions: ({ navigation }) => ({
       drawerLabel: "Human Interface",
-      drawerIcon: drawerButton("logo-apple", "logo-apple")
+      drawerIcon: drawerButton("logo-apple",)
     })
   },
   material: {
     screen: guidelinesStackNavigator(MaterialScreen, "Material Design"),
     navigationOptions: ({ navigation }) => ({
       drawerLabel: "Material Design",
-      drawerIcon: drawerButton("logo-android", "logo-android")
+      drawerIcon: drawerButton("logo-android",)
     })
   },
   iOSUIKit: {
     screen: guidelinesStackNavigator(iOSUIKitScreen, "iOSUIKit"),
     navigationOptions: ({ navigation }) => ({
       drawerLabel: "iOSUIKit",
-      drawerIcon: drawerButton("ios-construct", "ios-construct-outline")
+      drawerIcon: drawerButton("ios-construct")
     })
   },
   humanShowcase: {
@@ -109,7 +109,7 @@ const Root = DrawerNavigator({
     }),
     navigationOptions: {
       drawerLabel: "Showcase - Human Interface",
-      drawerIcon: drawerButton("ios-create", "ios-create-outline")
+      drawerIcon: drawerButton("ios-create")
     }
   },
   materialShowcase: {
@@ -124,14 +124,14 @@ const Root = DrawerNavigator({
     }),
     navigationOptions: {
       drawerLabel: "Showcase - Material Design",
-      drawerIcon: drawerButton("ios-create", "ios-create-outline")
+      drawerIcon: drawerButton("ios-create")
     }
   },
   systemWeights: {
     screen: guidelinesStackNavigator(SystemWeightsScreen, "System Weights"),
     navigationOptions: ({ navigation }) => ({
       drawerLabel: "System Weights",
-      drawerIcon: drawerButton("ios-quote", "ios-quote-outline")
+      drawerIcon: drawerButton("ios-quote")
     })
   },
   ...Platform.select({
@@ -143,7 +143,7 @@ const Root = DrawerNavigator({
         ),
         navigationOptions: ({ navigation }) => ({
           drawerLabel: "San Francisco Weights",
-          drawerIcon: drawerButton("logo-apple", "logo-apple")
+          drawerIcon: drawerButton("logo-apple",)
         })
       }
     },
@@ -152,21 +152,21 @@ const Root = DrawerNavigator({
         screen: guidelinesStackNavigator(RobotoWeightsScreen, "Roboto Weights"),
         navigationOptions: ({ navigation }) => ({
           drawerLabel: "Roboto Weights",
-          drawerIcon: drawerButton("logo-android", "logo-android")
+          drawerIcon: drawerButton("logo-android",)
         })
       },
       notoCJK: {
         screen: guidelinesStackNavigator(NotoCJKScreen, "Noto CJK Weights"),
         navigationOptions: ({ navigation }) => ({
           drawerLabel: "Noto CJK Weights",
-          drawerIcon: drawerButton("logo-android", "logo-android")
+          drawerIcon: drawerButton("logo-android",)
         })
       },
       notoTall: {
         screen: guidelinesStackNavigator(NotoTallScreen, "Noto Tall Weights"),
         navigationOptions: ({ navigation }) => ({
           drawerLabel: "Noto Tall Weights",
-          drawerIcon: drawerButton("logo-android", "logo-android")
+          drawerIcon: drawerButton("logo-android",)
         })
       }
     }
@@ -178,7 +178,7 @@ const Root = DrawerNavigator({
     ),
     navigationOptions: ({ navigation }) => ({
       drawerLabel: "System Dense Weights",
-      drawerIcon: drawerButton("ios-quote", "ios-quote-outline")
+      drawerIcon: drawerButton("ios-quote")
     })
   },
   systemTallWeights: {
@@ -188,21 +188,21 @@ const Root = DrawerNavigator({
     ),
     navigationOptions: ({ navigation }) => ({
       drawerLabel: "System Tall Weights",
-      drawerIcon: drawerButton("ios-quote", "ios-quote-outline")
+      drawerIcon: drawerButton("ios-quote")
     })
   },
   humanDense: {
     screen: guidelinesStackNavigator(HumanDenseScreen, "Human Interface Dense"),
     navigationOptions: ({ navigation }) => ({
       drawerLabel: "Human Interface Dense",
-      drawerIcon: drawerButton("logo-apple", "logo-apple")
+      drawerIcon: drawerButton("logo-apple",)
     })
   },
   humanTall: {
     screen: guidelinesStackNavigator(HumanTallScreen, "Human Interface Tall"),
     navigationOptions: ({ navigation }) => ({
       drawerLabel: "Human Interface Tall",
-      drawerIcon: drawerButton("logo-apple", "logo-apple")
+      drawerIcon: drawerButton("logo-apple",)
     })
   },
   materialDense: {
@@ -212,7 +212,7 @@ const Root = DrawerNavigator({
     ),
     navigationOptions: ({ navigation }) => ({
       drawerLabel: "Material Design Dense",
-      drawerIcon: drawerButton("logo-android", "logo-android")
+      drawerIcon: drawerButton("logo-android",)
     })
   },
   materialTall: {
@@ -222,21 +222,21 @@ const Root = DrawerNavigator({
     ),
     navigationOptions: ({ navigation }) => ({
       drawerLabel: "Material Design Tall",
-      drawerIcon: drawerButton("logo-android", "logo-android")
+      drawerIcon: drawerButton("logo-android",)
     })
   },
   iOSUIKitDense: {
     screen: guidelinesStackNavigator(iOSUIKitDenseScreen, "iOSUIKit Dense"),
     navigationOptions: ({ navigation }) => ({
       drawerLabel: "iOSUIKit Dense",
-      drawerIcon: drawerButton("ios-construct", "ios-construct-outline")
+      drawerIcon: drawerButton("ios-construct")
     })
   },
   iOSUIKitTall: {
     screen: guidelinesStackNavigator(iOSUIKitTallScreen, "iOSUIKit Tall"),
     navigationOptions: ({ navigation }) => ({
       drawerLabel: "iOSUIKit Tall",
-      drawerIcon: drawerButton("ios-construct", "ios-construct-outline")
+      drawerIcon: drawerButton("ios-construct")
     })
   },
   integrations: {
@@ -251,7 +251,7 @@ const Root = DrawerNavigator({
     }),
     navigationOptions: {
       drawerLabel: "Integration examples",
-      drawerIcon: drawerButton("ios-code", "ios-code-outline")
+      drawerIcon: drawerButton("ios-code")
     }
   }
 });

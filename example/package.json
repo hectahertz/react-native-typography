@@ -1,36 +1,23 @@
 {
   "name": "react-native-typography-example",
-  "version": "0.1.0",
-  "devDependencies": {
-    "eslint": "^4.12.0",
-    "eslint-config-universe": "^1.0.6",
-    "jest-expo": "^22.0.0",
-    "prettier": "^1.8.2",
-    "react-native-scripts": "1.7.0",
-    "react-test-renderer": "16.0.0-beta.5"
-  },
-  "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
+  "main": "node_modules/expo/AppEntry.js",
+  "license": "MIT",
   "scripts": {
-    "start": "react-native-scripts start",
-    "eject": "react-native-scripts eject",
-    "android": "react-native-scripts android",
-    "ios": "react-native-scripts ios",
-    "test": "node node_modules/jest/bin/jest.js --watch"
-  },
-  "jest": {
-    "preset": "jest-expo"
-  },
-  "eslintConfig": {
-    "extends": "universe/native"
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "eject": "expo eject"
   },
   "dependencies": {
-    "expo": "^25.0.0",
+    "expo": "^31.0.4",
     "glamorous-native": "^1.2.0",
-    "react": "16.2.0",
-    "react-native":
-      "https://github.com/expo/react-native/archive/sdk-25.0.0.tar.gz",
+    "react": "16.5.0",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-31.0.1.tar.gz",
     "react-native-typography": "^1.4.0",
     "react-navigation": "^1.0.0-beta.27",
     "styled-components": "^3.0.2"
+  },
+  "devDependencies": {
+    "babel-preset-expo": "^5.0.0"
   }
 }

@@ -6,7 +6,8 @@ import glamorous from "glamorous-native";
 
 const { Text: GlamorousBuiltInText } = glamorous;
 
-const StyledText = styled.Text`
+// See https://github.com/styled-components/styled-components/issues/1449#issuecomment-420087359
+const StyledText = styled(props => <Text {...props} />)`
   ${human.headlineObject};
   color: ${iOSColors.red};
   margin-top: 8;

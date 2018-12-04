@@ -1,4 +1,7 @@
-node_modules/
-.expo/
+node_modules/**/*
+.expo/*
 npm-debug.*
-.DS_Store
+*.jks
+*.p12
+*.key
+*.mobileprovision
