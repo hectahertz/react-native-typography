@@ -49,6 +49,8 @@ And it will look like this:
   [via Expo](https://expo.io/@hectahertz/react-native-typography-example) or
   [check the code](example/App.js), all of the screenshots are taken directly
   from there!
+* You can see and change the example app
+  [via Appitr IDE](https://ide.appitr.com/public/ide/39-violent-driving) online.
 
 ## Typography collections
 
