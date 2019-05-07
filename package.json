@@ -5,6 +5,8 @@
     "Pixel–perfect, native–looking typographic styles for React Native",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "module": "src/index.js",
+  "sideEffects": false,
   "files": ["src/", "dist/"],
   "directories": {
     "example": "example"
