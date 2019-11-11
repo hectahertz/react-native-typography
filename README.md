@@ -56,9 +56,9 @@ We provide a series of predefined collections for you to start with that match
 the native design systems for iOS and Android.
 
 You can **use them directly** wherever you would supply a
-[textStyle](https://facebook.github.io/react-native/docs/textstyleproptypes.html).
+[textStyle](https://facebook.github.io/react-native/docs/text#style).
 
-There's also the option of [extending them](#customization-helpers) to create
+There's also the option of [extending them](#customization--helpers) to create
 your own styles.
 
 ### Material Design
@@ -117,7 +117,7 @@ The collections provide every style in 2 different ways:
 
 The basic way to use them is to set the StyleSheet directly where you would
 supply a
-[textStyle](https://facebook.github.io/react-native/docs/textstyleproptypes.html):
+[textStyle](https://facebook.github.io/react-native/docs/text#style):
 
 ```JSX
 <Text style={material.title}>Title</Text>
