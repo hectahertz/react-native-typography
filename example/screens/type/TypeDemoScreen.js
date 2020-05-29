@@ -18,7 +18,7 @@ export class TypeDemoScreen extends React.Component {
       UIManager.setLayoutAnimationEnabledExperimental(true);
   }
 
-  componentWillMount() {
+  componentDidMount() {
     this.props.navigation.setParams({
       showGuidelines: () =>
         this.setState({ showGuidelines: !this.state.showGuidelines }),

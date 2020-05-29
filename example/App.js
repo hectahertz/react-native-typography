@@ -24,6 +24,8 @@ import SystemTallWeightsScreen from "./screens/type/SystemTallWeightsScreen";
 import HumanShowcaseScreen from "./screens/showcase/HumanShowcaseScreen";
 import MaterialShowcaseScreen from "./screens/showcase/MaterialShowcaseScreen";
 
+console.disableYellowBox = true;
+
 const drawerButton = icon => ({ focused }) => (
   <Ionicons
     name={icon}
@@ -86,14 +88,14 @@ const Root = DrawerNavigator({
     screen: guidelinesStackNavigator(HumanScreen, "Human Interface"),
     navigationOptions: ({ navigation }) => ({
       drawerLabel: "Human Interface",
-      drawerIcon: drawerButton("logo-apple",)
+      drawerIcon: drawerButton("logo-apple")
     })
   },
   material: {
     screen: guidelinesStackNavigator(MaterialScreen, "Material Design"),
     navigationOptions: ({ navigation }) => ({
       drawerLabel: "Material Design",
-      drawerIcon: drawerButton("logo-android",)
+      drawerIcon: drawerButton("logo-android")
     })
   },
   iOSUIKit: {
@@ -143,7 +145,7 @@ const Root = DrawerNavigator({
         ),
         navigationOptions: ({ navigation }) => ({
           drawerLabel: "San Francisco Weights",
-          drawerIcon: drawerButton("logo-apple",)
+          drawerIcon: drawerButton("logo-apple")
         })
       }
     },
@@ -152,21 +154,21 @@ const Root = DrawerNavigator({
         screen: guidelinesStackNavigator(RobotoWeightsScreen, "Roboto Weights"),
         navigationOptions: ({ navigation }) => ({
           drawerLabel: "Roboto Weights",
-          drawerIcon: drawerButton("logo-android",)
+          drawerIcon: drawerButton("logo-android")
         })
       },
       notoCJK: {
         screen: guidelinesStackNavigator(NotoCJKScreen, "Noto CJK Weights"),
         navigationOptions: ({ navigation }) => ({
           drawerLabel: "Noto CJK Weights",
-          drawerIcon: drawerButton("logo-android",)
+          drawerIcon: drawerButton("logo-android")
         })
       },
       notoTall: {
         screen: guidelinesStackNavigator(NotoTallScreen, "Noto Tall Weights"),
         navigationOptions: ({ navigation }) => ({
           drawerLabel: "Noto Tall Weights",
-          drawerIcon: drawerButton("logo-android",)
+          drawerIcon: drawerButton("logo-android")
         })
       }
     }
@@ -195,14 +197,14 @@ const Root = DrawerNavigator({
     screen: guidelinesStackNavigator(HumanDenseScreen, "Human Interface Dense"),
     navigationOptions: ({ navigation }) => ({
       drawerLabel: "Human Interface Dense",
-      drawerIcon: drawerButton("logo-apple",)
+      drawerIcon: drawerButton("logo-apple")
     })
   },
   humanTall: {
     screen: guidelinesStackNavigator(HumanTallScreen, "Human Interface Tall"),
     navigationOptions: ({ navigation }) => ({
       drawerLabel: "Human Interface Tall",
-      drawerIcon: drawerButton("logo-apple",)
+      drawerIcon: drawerButton("logo-apple")
     })
   },
   materialDense: {
@@ -212,7 +214,7 @@ const Root = DrawerNavigator({
     ),
     navigationOptions: ({ navigation }) => ({
       drawerLabel: "Material Design Dense",
-      drawerIcon: drawerButton("logo-android",)
+      drawerIcon: drawerButton("logo-android")
     })
   },
   materialTall: {
@@ -222,7 +224,7 @@ const Root = DrawerNavigator({
     ),
     navigationOptions: ({ navigation }) => ({
       drawerLabel: "Material Design Tall",
-      drawerIcon: drawerButton("logo-android",)
+      drawerIcon: drawerButton("logo-android")
     })
   },
   iOSUIKitDense: {
