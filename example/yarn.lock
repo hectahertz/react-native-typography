@@ -3119,9 +3119,10 @@ get-value@^2.0.3, get-value@^2.0.6:
   resolved "https://registry.yarnpkg.com/get-value/-/get-value-2.0.6.tgz#dc15ca1c672387ca76bd37ac0a395ba2042a2c28"
   integrity sha1-3BXKHGcjh8p2vTesCjlbogQqLCg=
 
-glamorous-native@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/glamorous-native/-/glamorous-native-1.2.0.tgz#5cc576d81a50f0d72b839793b6e7c708bef1467b"
+glamorous-native@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/glamorous-native/-/glamorous-native-2.0.0.tgz#83309f874923e62d02f00967db3d5c854dd452f8"
+  integrity sha512-qGAs/ra91zhMgm35l8DK4I1Vwjmeu40VyGSDhwxp65ytYZCalkIoFNUxRpJhIpyJHZZXn3d1e/poXPcMUrWv6A==
   dependencies:
     brcast "^2.0.0"
 
