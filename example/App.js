@@ -37,12 +37,21 @@ const drawerButton = icon => ({ focused }) => (
 const typeDemoHeaderRight = navigation => (
   <View style={styles.headerRightButtonRow}>
     <TouchableOpacity
+      onPress={navigation.state.params && navigation.state.params.showText}
+    >
+      <Ionicons
+        name="md-quote"
+        size={28}
+        style={{ paddingHorizontal: 16, color: iOSColors.black }}
+      />
+    </TouchableOpacity>
+    <TouchableOpacity
       onPress={navigation.state.params && navigation.state.params.showNames}
     >
       <Ionicons
         name={Platform.OS === "ios" ? "ios-code" : "md-code"}
         size={28}
-        style={{ paddingHorizontal: 16, color: iOSColors.black }}
+        style={{ paddingRight: 16, color: iOSColors.black }}
       />
     </TouchableOpacity>
     <TouchableOpacity
