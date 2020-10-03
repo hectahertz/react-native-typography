@@ -9,13 +9,20 @@
     "eject": "expo eject"
   },
   "dependencies": {
+    "@react-native-community/masked-view": "0.1.10",
+    "@react-navigation/drawer": "^5.9.2",
+    "@react-navigation/native": "^5.7.5",
+    "@react-navigation/stack": "^5.9.2",
     "expo": "^39.0.0",
     "glamorous-native": "^2.0.0",
     "react": "16.13.1",
     "react-native":
       "https://github.com/expo/react-native/archive/sdk-39.0.0.tar.gz",
+    "react-native-gesture-handler": "~1.7.0",
+    "react-native-reanimated": "~1.13.0",
+    "react-native-safe-area-context": "3.1.4",
+    "react-native-screens": "~2.10.1",
     "react-native-typography": "^1.4.1",
-    "react-navigation": "^1.0.0-beta.27",
     "styled-components": "^5.2.0"
   },
   "devDependencies": {
