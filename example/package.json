@@ -9,16 +9,16 @@
     "eject": "expo eject"
   },
   "dependencies": {
-    "expo": "^38.0.0",
+    "expo": "^39.0.0",
     "glamorous-native": "^1.2.0",
-    "react": "16.11.0",
+    "react": "16.13.1",
     "react-native":
-      "https://github.com/expo/react-native/archive/sdk-38.0.2.tar.gz",
+      "https://github.com/expo/react-native/archive/sdk-39.0.0.tar.gz",
     "react-native-typography": "^1.4.1",
     "react-navigation": "^1.0.0-beta.27",
     "styled-components": "^3.0.2"
   },
   "devDependencies": {
-    "babel-preset-expo": "^8.2.3"
+    "babel-preset-expo": "^8.3.0"
   }
 }
