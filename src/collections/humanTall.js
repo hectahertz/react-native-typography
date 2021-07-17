@@ -1,4 +1,4 @@
-import { Platform } from "react-native";
+import { Platform } from "react-primitives";
 import CombinedStyleSheet from "../internal/CombinedStyleSheet";
 import suffixProperties from "../internal/suffixProperties";
 import systemTallWeights from "../helpers/systemTallWeights";

@@ -1,4 +1,4 @@
-import { StyleProp, TextStyle } from "react-native";
+import { StyleProp, TextStyle } from "react-primitives";
 type Style = StyleProp<TextStyle>;
 
 export var material: {

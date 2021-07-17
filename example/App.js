@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, View, Platform, TouchableOpacity } from "react-native";
+import { StyleSheet, View, Platform, TouchableOpacity } from "react-primitives";
 import { StackNavigator, DrawerNavigator } from "react-navigation";
 import { Ionicons } from "@expo/vector-icons";
 import { iOSColors } from "react-native-typography";
