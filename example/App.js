@@ -1,6 +1,8 @@
 import React from "react";
 import { StyleSheet, View, Platform, TouchableOpacity } from "react-native";
-import { StackNavigator, DrawerNavigator } from "react-navigation";
+import { NavigationContainer, useNavigation } from "@react-navigation/native";
+import { createStackNavigator } from "@react-navigation/stack";
+import { createDrawerNavigator } from "@react-navigation/drawer";
 import { Ionicons } from "@expo/vector-icons";
 import { iOSColors } from "react-native-typography";
 
@@ -32,96 +34,42 @@ const drawerButton = icon => ({ focused }) => (
   />
 );
 
-const typeDemoHeaderRight = navigation => (
-  <View style={styles.headerRightButtonRow}>
-    <TouchableOpacity
-      onPress={navigation.state.params && navigation.state.params.showNames}
-    >
-      <Ionicons
-        name={Platform.OS === "ios" ? "ios-code" : "md-code"}
-        size={28}
-        style={{ paddingHorizontal: 16, color: iOSColors.black }}
-      />
-    </TouchableOpacity>
-    <TouchableOpacity
-      onPress={
-        navigation.state.params && navigation.state.params.showGuidelines
-      }
-    >
-      <Ionicons
-        name={Platform.OS === "ios" ? "ios-crop" : "md-crop"}
-        size={28}
-        style={{ paddingRight: 16, color: iOSColors.black }}
-      />
-    </TouchableOpacity>
-  </View>
-);
+const guidelinesStackNavigator = (screen, headerTitle) => ({
+  screen,
+  headerTitle
+});
 
-const openDrawerHeaderButton = (navigation, color) => (
-  <TouchableOpacity onPress={() => navigation.navigate("DrawerOpen")}>
-    <Ionicons
-      name={Platform.OS === "ios" ? "ios-menu" : "md-menu"}
-      size={30}
-      style={{ paddingHorizontal: 16, color }}
-    />
-  </TouchableOpacity>
-);
-
-const guidelinesStackNavigator = (screen, headerTitle) =>
-  StackNavigator(
-    {
-      Screen: { screen }
-    },
-    {
-      navigationOptions: ({ navigation }) => ({
-        headerLeft: openDrawerHeaderButton(navigation, iOSColors.black),
-        headerTitle,
-        headerRight: typeDemoHeaderRight(navigation)
-      })
-    }
-  );
-
-const Root = DrawerNavigator({
+const Screens = {
   human: {
     screen: guidelinesStackNavigator(HumanScreen, "Human Interface"),
-    navigationOptions: ({ navigation }) => ({
+    navigationOptions: {
       drawerLabel: "Human Interface",
-      drawerIcon: drawerButton("logo-apple",)
-    })
+      drawerIcon: drawerButton("logo-apple")
+    }
   },
   material: {
     screen: guidelinesStackNavigator(MaterialScreen, "Material Design"),
-    navigationOptions: ({ navigation }) => ({
+    navigationOptions: {
       drawerLabel: "Material Design",
-      drawerIcon: drawerButton("logo-android",)
-    })
+      drawerIcon: drawerButton("logo-android")
+    }
   },
   iOSUIKit: {
     screen: guidelinesStackNavigator(iOSUIKitScreen, "iOSUIKit"),
-    navigationOptions: ({ navigation }) => ({
+    navigationOptions: {
       drawerLabel: "iOSUIKit",
       drawerIcon: drawerButton("ios-construct")
-    })
+    }
   },
   humanShowcase: {
-    screen: StackNavigator({
-      Screen: { screen: HumanShowcaseScreen }
-    }),
+    screen: guidelinesStackNavigator(HumanShowcaseScreen, "iOSUIKit"),
     navigationOptions: {
       drawerLabel: "Showcase - Human Interface",
       drawerIcon: drawerButton("ios-create")
     }
   },
   materialShowcase: {
-    screen: StackNavigator({
-      Screen: {
-        screen: MaterialShowcaseScreen,
-        navigationOptions: ({ navigation }) => ({
-          headerTitle: "Your Daily Mix",
-          headerLeft: openDrawerHeaderButton(navigation, iOSColors.white)
-        })
-      }
-    }),
+    screen: guidelinesStackNavigator(MaterialShowcaseScreen, "Your Daily Mix"),
     navigationOptions: {
       drawerLabel: "Showcase - Material Design",
       drawerIcon: drawerButton("ios-create")
@@ -129,10 +77,10 @@ const Root = DrawerNavigator({
   },
   systemWeights: {
     screen: guidelinesStackNavigator(SystemWeightsScreen, "System Weights"),
-    navigationOptions: ({ navigation }) => ({
+    navigationOptions: {
       drawerLabel: "System Weights",
       drawerIcon: drawerButton("ios-quote")
-    })
+    }
   },
   ...Platform.select({
     ios: {
@@ -141,33 +89,33 @@ const Root = DrawerNavigator({
           SFWeightsScreen,
           "San Francisco Weights"
         ),
-        navigationOptions: ({ navigation }) => ({
+        navigationOptions: {
           drawerLabel: "San Francisco Weights",
-          drawerIcon: drawerButton("logo-apple",)
-        })
+          drawerIcon: drawerButton("logo-apple")
+        }
       }
     },
     android: {
       roboto: {
         screen: guidelinesStackNavigator(RobotoWeightsScreen, "Roboto Weights"),
-        navigationOptions: ({ navigation }) => ({
+        navigationOptions: {
           drawerLabel: "Roboto Weights",
-          drawerIcon: drawerButton("logo-android",)
-        })
+          drawerIcon: drawerButton("logo-android")
+        }
       },
       notoCJK: {
         screen: guidelinesStackNavigator(NotoCJKScreen, "Noto CJK Weights"),
-        navigationOptions: ({ navigation }) => ({
+        navigationOptions: {
           drawerLabel: "Noto CJK Weights",
-          drawerIcon: drawerButton("logo-android",)
-        })
+          drawerIcon: drawerButton("logo-android")
+        }
       },
       notoTall: {
         screen: guidelinesStackNavigator(NotoTallScreen, "Noto Tall Weights"),
-        navigationOptions: ({ navigation }) => ({
+        navigationOptions: {
           drawerLabel: "Noto Tall Weights",
-          drawerIcon: drawerButton("logo-android",)
-        })
+          drawerIcon: drawerButton("logo-android")
+        }
       }
     }
   }),
@@ -176,91 +124,130 @@ const Root = DrawerNavigator({
       SystemDenseWeightsScreen,
       "System Dense Weights"
     ),
-    navigationOptions: ({ navigation }) => ({
+    navigationOptions: {
       drawerLabel: "System Dense Weights",
       drawerIcon: drawerButton("ios-quote")
-    })
+    }
   },
   systemTallWeights: {
     screen: guidelinesStackNavigator(
       SystemTallWeightsScreen,
       "System Tall Weights"
     ),
-    navigationOptions: ({ navigation }) => ({
+    navigationOptions: {
       drawerLabel: "System Tall Weights",
       drawerIcon: drawerButton("ios-quote")
-    })
+    }
   },
   humanDense: {
     screen: guidelinesStackNavigator(HumanDenseScreen, "Human Interface Dense"),
-    navigationOptions: ({ navigation }) => ({
+    navigationOptions: {
       drawerLabel: "Human Interface Dense",
-      drawerIcon: drawerButton("logo-apple",)
-    })
+      drawerIcon: drawerButton("logo-apple")
+    }
   },
   humanTall: {
     screen: guidelinesStackNavigator(HumanTallScreen, "Human Interface Tall"),
-    navigationOptions: ({ navigation }) => ({
+    navigationOptions: {
       drawerLabel: "Human Interface Tall",
-      drawerIcon: drawerButton("logo-apple",)
-    })
+      drawerIcon: drawerButton("logo-apple")
+    }
   },
   materialDense: {
     screen: guidelinesStackNavigator(
       MaterialDenseScreen,
       "Material Design Dense"
     ),
-    navigationOptions: ({ navigation }) => ({
+    navigationOptions: {
       drawerLabel: "Material Design Dense",
-      drawerIcon: drawerButton("logo-android",)
-    })
+      drawerIcon: drawerButton("logo-android")
+    }
   },
   materialTall: {
     screen: guidelinesStackNavigator(
       MaterialTallScreen,
       "Material Design Tall"
     ),
-    navigationOptions: ({ navigation }) => ({
+    navigationOptions: {
       drawerLabel: "Material Design Tall",
-      drawerIcon: drawerButton("logo-android",)
-    })
+      drawerIcon: drawerButton("logo-android")
+    }
   },
   iOSUIKitDense: {
     screen: guidelinesStackNavigator(iOSUIKitDenseScreen, "iOSUIKit Dense"),
-    navigationOptions: ({ navigation }) => ({
+    navigationOptions: {
       drawerLabel: "iOSUIKit Dense",
       drawerIcon: drawerButton("ios-construct")
-    })
+    }
   },
   iOSUIKitTall: {
     screen: guidelinesStackNavigator(iOSUIKitTallScreen, "iOSUIKit Tall"),
-    navigationOptions: ({ navigation }) => ({
+    navigationOptions: {
       drawerLabel: "iOSUIKit Tall",
       drawerIcon: drawerButton("ios-construct")
-    })
+    }
   },
   integrations: {
-    screen: StackNavigator({
-      Screen: {
-        screen: IntegrationsScreen,
-        navigationOptions: ({ navigation }) => ({
-          headerTitle: "Integration examples",
-          headerLeft: openDrawerHeaderButton(navigation, iOSColors.black)
-        })
-      }
-    }),
+    screen: guidelinesStackNavigator(
+      IntegrationsScreen,
+      "Integration examples"
+    ),
     navigationOptions: {
       drawerLabel: "Integration examples",
       drawerIcon: drawerButton("ios-code")
     }
   }
-});
+};
+
+const Drawer = createDrawerNavigator();
+
+const StackScreen = (screenComponent, headerTitle) => {
+  const Stack = createStackNavigator();
+
+  return () => {
+    const navigation = useNavigation();
+    return (
+      <Stack.Navigator
+        screenOptions={{
+          headerLeft: () => (
+            <TouchableOpacity onPress={() => navigation.openDrawer()}>
+              <Ionicons
+                name={Platform.OS === "ios" ? "ios-menu" : "md-menu"}
+                size={30}
+                style={{ paddingHorizontal: 16, color: iOSColors.black }}
+              />
+            </TouchableOpacity>
+          ),
+          headerTitle
+        }}
+      >
+        <Stack.Screen component={screenComponent} name="Screen" />
+      </Stack.Navigator>
+    );
+  };
+};
 
 const App = () => {
   return (
-    <View style={styles.container}>
-      <Root />
-    </View>
+    <NavigationContainer>
+      <View style={styles.container}>
+        <Drawer.Navigator>
+          {Object.entries(Screens).map(([screenName, screen]) => (
+            <Drawer.Screen
+              name={screenName}
+              component={StackScreen(
+                screen.screen.screen,
+                screen.screen.headerTitle
+              )}
+              options={{
+                ...screen.navigationOptions,
+                title: screen.screen.headerTitle
+              }}
+            />
+          ))}
+        </Drawer.Navigator>
+      </View>
+    </NavigationContainer>
   );
 };
 
