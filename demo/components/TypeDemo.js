@@ -1,10 +1,11 @@
 import React from "react";
 import { StyleSheet, View, Text } from "react-native";
+import { ScrollView } from "react-native-gesture-handler";
 import { human, materialColors } from "react-native-typography";
 
 export default function TypeDemo({ blackStyles, whiteStyles }) {
   return (
-    <View style={styles.screenContainer}>
+    <ScrollView style={styles.screenContainer}>
       <View style={styles.section}>
         {blackStyles.map(s => (
           <View key={s.name}>
@@ -29,7 +30,7 @@ export default function TypeDemo({ blackStyles, whiteStyles }) {
           </View>
         ))}
       </View>
-    </View>
+    </ScrollView>
   );
 }
 
