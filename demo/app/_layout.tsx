@@ -6,6 +6,13 @@ export default function Layout() {
     <GestureHandlerRootView style={{ flex: 1 }}>
       <Drawer>
         <Drawer.Screen
+          name="human"
+          options={{
+            drawerLabel: "Human",
+            title: "Human"
+          }}
+        />
+        <Drawer.Screen
           name="systemWeights"
           options={{
             drawerLabel: "System Weights",
