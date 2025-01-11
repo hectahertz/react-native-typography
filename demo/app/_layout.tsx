@@ -12,6 +12,13 @@ export default function Layout() {
             title: "System Weights"
           }}
         />
+        <Drawer.Screen
+          name="systemTallWeights"
+          options={{
+            drawerLabel: "System Tall Weights",
+            title: "System Tall Weights"
+          }}
+        />
       </Drawer>
     </GestureHandlerRootView>
   );
