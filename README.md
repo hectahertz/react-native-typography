@@ -45,7 +45,7 @@ And it will look like this:
 
 ### Demo app
 
-* You can run the [included Demo Expo app](demo/app.json), all of the screenshots are taken directly from there!
+* You can run the [included Demo Expo app](demo/), all of the screenshots are taken directly from there!
 
 ## Typography collections
 
