@@ -6,6 +6,13 @@ export default function Layout() {
     <GestureHandlerRootView style={{ flex: 1 }}>
       <Drawer>
         <Drawer.Screen
+          name="index"
+          options={{
+            drawerLabel: "Welcome",
+            title: "Welcome"
+          }}
+        />
+        <Drawer.Screen
           name="human"
           options={{
             drawerLabel: "Human",
