@@ -1,4 +1,7 @@
-# <img alt="React Native typography" src="https://raw.githubusercontent.com/hectahertz/react-native-typography/HEAD/images/logo.png" width="275"/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./images/logoDark.png">
+  <img alt="React Native typography" src="./images/logo.png" width="275">
+</picture>
 
 Pixel–perfect, native–looking typographic styles for React Native.
 
