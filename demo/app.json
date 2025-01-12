@@ -36,6 +36,21 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "f437fe88-78c3-4c8a-b579-cf31ca627176"
+      }
+    },
+    "owner": "hectahertz",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/f437fe88-78c3-4c8a-b579-cf31ca627176"
     }
   }
 }

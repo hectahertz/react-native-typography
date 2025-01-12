@@ -40,7 +40,8 @@
     "react-native-screens": "~4.4.0",
     "react-native-typography": "^1.4.1",
     "react-native-web": "~0.19.13",
-    "react-native-webview": "13.12.5"
+    "react-native-webview": "13.12.5",
+    "expo-updates": "~0.26.12"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
