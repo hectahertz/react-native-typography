@@ -43,12 +43,9 @@ And it will look like this:
 <img alt="Material Design Collection" src="https://raw.githubusercontent.com/hectahertz/react-native-typography/HEAD/images/hello-world.png" width="40%" height="40%"/>
 </p>
 
-### Example app
+### Demo app
 
-* You can run the example app
-  [via Expo](https://expo.io/@hectahertz/react-native-typography-example) or
-  [check the code](example/App.js), all of the screenshots are taken directly
-  from there!
+* You can run the [included Demo Expo app](demo/app.json), all of the screenshots are taken directly from there!
 
 ## Typography collections
 
