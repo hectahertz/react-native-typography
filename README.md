@@ -370,8 +370,7 @@ the future.
 
 #### I use styled-components/glamorous/etc. Can I use react-native-typography?
 
-Of course! There are some examples in the provided app,
-[check the code!](example/screens/type/IntegrationsScreen.js)
+Of course! Just use the plain objects accordingly as explained above.
 
 #### Why is this library exporting StyleSheets and objects instead of components?
 
