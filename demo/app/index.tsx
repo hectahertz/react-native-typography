@@ -1,5 +1,5 @@
 import { Text, View } from "react-native";
-import { human } from "react-native-typography";
+import { iOSUIKit } from "react-native-typography";
 
 export default function Index() {
   return (
@@ -12,10 +12,10 @@ export default function Index() {
         paddingVertical: 20
       }}
     >
-      <Text style={human.largeTitle}>
+      <Text style={iOSUIKit.largeTitleEmphasized}>
         Thank you for choosing react-native-typography!
       </Text>
-      <Text style={human.body}>
+      <Text style={iOSUIKit.body}>
         You can find examples on the different screens on the menu.
       </Text>
     </View>
